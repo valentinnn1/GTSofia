@@ -1,0 +1,12 @@
+<nav>
+    <ul>
+        {% assign nav = site.pages | sort:"order" %}
+        {% for page in nav %}
+            {% if page.title %}
+            <li>
+                <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
+            </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</nav>
