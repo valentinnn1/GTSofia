@@ -1,0 +1,111 @@
+.site{
+    &-main{
+        .news-section{
+            color: rgb(21, 47, 99);
+            padding: 1rem 0;
+
+            h2{
+                text-align: center;
+
+                &:after{
+                    content: '';
+                    width: 100px;
+                    height: 2px;
+                    background-color: rgb(21, 47, 99);
+                    display: block;
+                    margin: 1rem auto;
+                }
+            }
+            .news{
+                display: flex;
+                justify-content: space-around;
+
+                li{
+                    flex: 0 0 30%;
+                    padding-bottom: 2rem;
+                    list-style: none;
+
+                    .date{
+                        color: grey;
+                        padding: 0.4rem 0;
+                    }
+                }
+            }
+            .action{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 1rem;
+
+                a{
+                    text-decoration: none;
+                    cursor: pointer;
+                    color: rgb(21, 47, 99);
+
+                    i{
+                        padding-left: 0.5rem;
+                    }
+                    &:hover{
+                        text-decoration: underline;
+                    } 
+                }   
+            }
+        }
+        .newinsite-section{
+            height: 150px;
+            padding: 2rem 0;
+            text-align: center;
+            color: #fff;
+            background: rgb(50, 88, 165);
+
+            h2{
+                padding-bottom: 1rem;
+            }
+        }
+        .subscribe-section {
+            text-align: center;
+            background: rgb(21, 47, 99);
+            height: 220px;
+            color: #fff;
+            padding: 2.5rem 0;
+
+            h2{
+                &:after{
+                    content: '';
+                    width: 100px;
+                    height: 2px;
+                    background-color: #fff;
+                    display: block;
+                    margin: 1rem auto;
+                }
+            }
+            input[type="email"]{
+                margin-bottom: 0.5rem;
+                margin-right: 0.3rem;
+                border: none;
+                border-radius: 0.2em;
+                padding: 0.8rem 9rem 0.8rem 0.7rem;
+                outline: none;
+                background-color: #fff;
+                color: #215AA0;
+            }
+            input[type="submit"]{
+                background-color: #fff;
+                color: #215AA0;
+                border-radius: 0.2em;
+                padding: 0.8rem 2.5rem;
+                border: none;
+                cursor: pointer;
+                outline: none;
+                font-weight: bold;
+                margin-top: 1.2rem;
+                margin-bottom: 2rem;
+
+                &:hover{
+                    background-color: rgb(107, 107, 107);
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

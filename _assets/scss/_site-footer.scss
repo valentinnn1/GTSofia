@@ -1,0 +1,12 @@
+.site{
+    &-footer {
+        background: rgb(21, 47, 99);
+        text-align: center;
+        color: white;
+        padding: 1em 0;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+}

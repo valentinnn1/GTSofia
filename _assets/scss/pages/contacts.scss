@@ -1,0 +1,71 @@
+.site{
+    &-main{
+        color: rgb(21, 47, 99);
+        text-align: justify;
+
+        h2{
+            text-align: center;
+            margin-top: 1rem;
+
+            &:after{
+                content: '';
+                width: 100px;
+                height: 2px;
+                background-color: rgb(21, 47, 99);
+                display: block;
+                margin: 1rem auto;
+            }
+        }
+        section{
+            margin: 1rem auto;
+            width: 90%;
+            padding-bottom: 2rem;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            li{
+                list-style: none;
+            }
+
+            .social-icons{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .first-part{
+                padding-right: 1.5rem;
+                
+                li{
+                    padding: 0.3rem;
+                }
+
+                i{
+                    width: 30px;
+                }
+            }
+
+            .second-part{
+                padding-left: 1.5rem;
+
+                h4{
+                    padding-bottom: 0.5rem;
+                }
+
+                li{
+                    flex: 0 0 20%;
+                    
+                    a{
+                        color: rgb(21, 47, 99);
+
+                        &:hover{
+                            color: rgb(107, 107, 107);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
