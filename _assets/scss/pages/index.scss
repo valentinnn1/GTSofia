@@ -2,7 +2,16 @@
     &-main{
         .news-section{
             color: rgb(21, 47, 99);
-            padding: 1rem 0;
+            padding-top: 1rem;
+
+            &:after{
+                content: '';
+                width: 700px;
+                height: 1px;
+                background-color: rgb(189, 189, 189);
+                display: block;
+                margin: 1rem auto;
+            }
 
             h2{
                 text-align: center;
@@ -51,8 +60,53 @@
                 }   
             }
         }
+        .picofthemonth-section{
+            h2{
+                color: rgb(21, 47, 99);
+                text-align: center;
+            }
+            .container{
+                display: block;
+                margin: 1.5rem auto;
+                position: relative;
+                width: 900px;
+                img{
+                    display: block;
+                    margin: 1rem auto;
+                    overflow: hidden;
+                    width: 900px;
+                    height: auto;
+                }
+                .overlay{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: rgba(0, 0, 0, 0.5);
+                    width: 0;
+                    height: 15%;
+                    transition: width 0.5s ease-in;
+
+                    .text{
+                        opacity: 0;
+                        color: white;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;                      
+                        transform: translate(-50%, -50%);
+                    }
+                }
+                &:hover .overlay{
+                    width: 100%;
+                }
+                &:hover .text{
+                    opacity: 1;
+                }
+            }      
+        }
         .newinsite-section{
-            height: 150px;
+            max-height: 180px;
+            width: 100%;
             padding: 2rem 0;
             text-align: center;
             color: #fff;
@@ -61,6 +115,29 @@
             h2{
                 padding-bottom: 1rem;
             }
+
+            ul{
+                display: block;
+                width: 26%;
+                margin: 0 auto;
+
+                li {
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    padding: 0.3em;
+    
+                    &:before{
+                        font-family: 'Font Awesome 5 Free';
+                        content: '\f00c';
+                        display: block;
+                        font-weight: 900;
+                        color: #fff;
+                        margin-right: 1em;
+                    }
+                }
+            }
+            
         }
         .subscribe-section {
             text-align: center;

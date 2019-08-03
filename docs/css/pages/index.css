@@ -1,6 +1,13 @@
 .site-main .news-section {
   color: #152f63;
-  padding: 1rem 0; }
+  padding-top: 1rem; }
+  .site-main .news-section:after {
+    content: '';
+    width: 700px;
+    height: 1px;
+    background-color: #bdbdbd;
+    display: block;
+    margin: 1rem auto; }
   .site-main .news-section h2 {
     text-align: center; }
     .site-main .news-section h2:after {
@@ -34,14 +41,67 @@
       .site-main .news-section .action a:hover {
         text-decoration: underline; }
 
+.site-main .picofthemonth-section h2 {
+  color: #152f63;
+  text-align: center; }
+
+.site-main .picofthemonth-section .container {
+  display: block;
+  margin: 1.5rem auto;
+  position: relative;
+  width: 900px; }
+  .site-main .picofthemonth-section .container img {
+    display: block;
+    margin: 1rem auto;
+    overflow: hidden;
+    width: 900px;
+    height: auto; }
+  .site-main .picofthemonth-section .container .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 0;
+    height: 15%;
+    transition: width 0.5s ease-in; }
+    .site-main .picofthemonth-section .container .overlay .text {
+      opacity: 0;
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .site-main .picofthemonth-section .container:hover .overlay {
+    width: 100%; }
+  .site-main .picofthemonth-section .container:hover .text {
+    opacity: 1; }
+
 .site-main .newinsite-section {
-  height: 150px;
+  max-height: 180px;
+  width: 100%;
   padding: 2rem 0;
   text-align: center;
   color: #fff;
   background: #3258a5; }
   .site-main .newinsite-section h2 {
     padding-bottom: 1rem; }
+  .site-main .newinsite-section ul {
+    display: block;
+    width: 26%;
+    margin: 0 auto; }
+    .site-main .newinsite-section ul li {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      padding: 0.3em; }
+      .site-main .newinsite-section ul li:before {
+        font-family: 'Font Awesome 5 Free';
+        content: '\f00c';
+        display: block;
+        font-weight: 900;
+        color: #fff;
+        margin-right: 1em; }
 
 .site-main .subscribe-section {
   text-align: center;
