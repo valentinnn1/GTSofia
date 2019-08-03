@@ -1,0 +1,81 @@
+.site-main .news-section {
+  color: #152f63;
+  padding: 1rem 0; }
+  .site-main .news-section h2 {
+    text-align: center; }
+    .site-main .news-section h2:after {
+      content: '';
+      width: 100px;
+      height: 2px;
+      background-color: #152f63;
+      display: block;
+      margin: 1rem auto; }
+  .site-main .news-section .news {
+    display: flex;
+    justify-content: space-around; }
+    .site-main .news-section .news li {
+      flex: 0 0 30%;
+      padding-bottom: 2rem;
+      list-style: none; }
+      .site-main .news-section .news li .date {
+        color: grey;
+        padding: 0.4rem 0; }
+  .site-main .news-section .action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem; }
+    .site-main .news-section .action a {
+      text-decoration: none;
+      cursor: pointer;
+      color: #152f63; }
+      .site-main .news-section .action a i {
+        padding-left: 0.5rem; }
+      .site-main .news-section .action a:hover {
+        text-decoration: underline; }
+
+.site-main .newinsite-section {
+  height: 150px;
+  padding: 2rem 0;
+  text-align: center;
+  color: #fff;
+  background: #3258a5; }
+  .site-main .newinsite-section h2 {
+    padding-bottom: 1rem; }
+
+.site-main .subscribe-section {
+  text-align: center;
+  background: #152f63;
+  height: 220px;
+  color: #fff;
+  padding: 2.5rem 0; }
+  .site-main .subscribe-section h2:after {
+    content: '';
+    width: 100px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    margin: 1rem auto; }
+  .site-main .subscribe-section input[type="email"] {
+    margin-bottom: 0.5rem;
+    margin-right: 0.3rem;
+    border: none;
+    border-radius: 0.2em;
+    padding: 0.8rem 9rem 0.8rem 0.7rem;
+    outline: none;
+    background-color: #fff;
+    color: #215AA0; }
+  .site-main .subscribe-section input[type="submit"] {
+    background-color: #fff;
+    color: #215AA0;
+    border-radius: 0.2em;
+    padding: 0.8rem 2.5rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    margin-top: 1.2rem;
+    margin-bottom: 2rem; }
+    .site-main .subscribe-section input[type="submit"]:hover {
+      background-color: #6b6b6b;
+      color: #fff; }
