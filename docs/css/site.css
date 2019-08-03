@@ -16,7 +16,7 @@ html {
   text-shadow: 1px 3px 3px #1f1f1f;
   height: 450px;
   color: #fff;
-  letter-spacing: 2; }
+  letter-spacing: 0.1em; }
   .site-header .wrapper {
     display: flex;
     width: 92%;
@@ -57,7 +57,8 @@ html {
       outline: none;
       font-weight: bold;
       margin-top: 0.8rem;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      transition: background-color 0.4s ease-in-out; }
       .site-header section a:hover {
         background-color: #6b6b6b; }
 
@@ -73,12 +74,17 @@ html {
     margin-left: auto; }
     .site-nav ul li {
       list-style-type: none;
-      padding-right: 3.5rem; }
+      margin-right: 3.5rem; }
       .site-nav ul li a {
         letter-spacing: 0.15em;
         color: #fff;
         text-decoration: none;
-        font-weight: bold; }
+        font-weight: bold;
+        padding-bottom: 0.5rem; }
+        .site-nav ul li a:hover {
+          border-bottom: 1px solid white; }
+    .site-nav ul .selected a {
+      border-bottom: 1px solid white; }
 
 .site-footer {
   background: #152f63;
