@@ -1,0 +1,21 @@
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-2em, -2em);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body.loaded{
+    .site-nav{
+        li{
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+    }
+}
