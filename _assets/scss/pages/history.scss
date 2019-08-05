@@ -7,7 +7,6 @@
 .site{
     &-main{
         color: rgb(21, 47, 99);
-        text-align: justify;
         h2{
             text-align: center;
 
@@ -29,14 +28,17 @@
 
             @include mq(1024px){
                 font-size: 13px;
+                padding-bottom: 1.5rem;
             }
     
             @include mq(768px){
                 font-size: 11px;
+                padding-bottom: 1.2rem;
             }
     
             @include mq(480px){
                 font-size: 10px;
+                padding-bottom: 0.7rem;
             }
 
             &:last-of-type{
@@ -89,15 +91,21 @@
 
             img{
                 box-shadow: 0 0 1em rgb(21, 47, 99);
+                @include mq(768px){
+                    width: 150px;
+                }
+                @include mq(480px){
+                    width: 100px;
+                }
             } 
         }
         .metro img{
-            width: 250px;
+            width: 200px;
             @include mq(768px){
-                width: 200px;
+                width: 150px;
             }
             @include mq(480px){
-                width: 150px;
+                width: 100px;
             }
         }
     }

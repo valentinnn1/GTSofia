@@ -1,6 +1,5 @@
 .site-main {
-  color: #152f63;
-  text-align: justify; }
+  color: #152f63; }
   .site-main h2 {
     text-align: center; }
     .site-main h2:after {
@@ -18,13 +17,16 @@
     font-size: 15px; }
     @media screen and (max-width: 1024px) {
       .site-main section {
-        font-size: 13px; } }
+        font-size: 13px;
+        padding-bottom: 1.5rem; } }
     @media screen and (max-width: 768px) {
       .site-main section {
-        font-size: 11px; } }
+        font-size: 11px;
+        padding-bottom: 1.2rem; } }
     @media screen and (max-width: 480px) {
       .site-main section {
-        font-size: 10px; } }
+        font-size: 10px;
+        padding-bottom: 0.7rem; } }
     .site-main section:last-of-type {
       border: none; }
     .site-main section p {
@@ -61,11 +63,17 @@
           margin: 0.2rem 0.5rem 0.2rem 0.5rem; } }
     .site-main section img {
       box-shadow: 0 0 1em #152f63; }
+      @media screen and (max-width: 768px) {
+        .site-main section img {
+          width: 150px; } }
+      @media screen and (max-width: 480px) {
+        .site-main section img {
+          width: 100px; } }
   .site-main .metro img {
-    width: 250px; }
+    width: 200px; }
     @media screen and (max-width: 768px) {
       .site-main .metro img {
-        width: 200px; } }
+        width: 150px; } }
     @media screen and (max-width: 480px) {
       .site-main .metro img {
-        width: 150px; } }
+        width: 100px; } }
