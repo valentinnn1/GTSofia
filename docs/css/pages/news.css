@@ -17,8 +17,28 @@
     margin: 1rem auto;
     width: 80%;
     padding-bottom: 1rem; }
+    @media screen and (max-width: 1024px) {
+      .site-main li h3 {
+        font-size: 16px; } }
+    @media screen and (max-width: 768px) {
+      .site-main li h3 {
+        font-size: 15px; } }
     .site-main li:last-of-type {
       border: none; }
     .site-main li .date {
       color: grey;
       padding: 0.4rem 0; }
+      @media screen and (max-width: 1024px) {
+        .site-main li .date {
+          font-size: 12px;
+          padding: 0.3rem 0; } }
+      @media screen and (max-width: 768px) {
+        .site-main li .date {
+          font-size: 10px;
+          padding: 0.2rem 0; } }
+    @media screen and (max-width: 1024px) {
+      .site-main li .news-description {
+        font-size: 14px; } }
+    @media screen and (max-width: 768px) {
+      .site-main li .news-description {
+        font-size: 12px; } }
