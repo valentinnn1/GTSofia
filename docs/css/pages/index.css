@@ -54,8 +54,8 @@
     display: block;
     margin: 1rem auto;
     overflow: hidden;
-    width: 900px;
-    height: auto; }
+    height: auto;
+    width: 900px; }
   .site-main .picofthemonth-section .container .overlay {
     position: absolute;
     bottom: 0;

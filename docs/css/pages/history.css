@@ -16,17 +16,56 @@
     width: 90%;
     padding-bottom: 2rem;
     font-size: 15px; }
+    @media screen and (max-width: 1024px) {
+      .site-main section {
+        font-size: 13px; } }
+    @media screen and (max-width: 768px) {
+      .site-main section {
+        font-size: 11px; } }
+    @media screen and (max-width: 480px) {
+      .site-main section {
+        font-size: 10px; } }
     .site-main section:last-of-type {
       border: none; }
     .site-main section p {
       padding: 0.5rem; }
+      @media screen and (max-width: 768px) {
+        .site-main section p {
+          padding: 0.3rem; } }
+      @media screen and (max-width: 480px) {
+        .site-main section p {
+          padding: 0.2rem; } }
     .site-main section .left {
       float: left;
       margin: 0.5rem 1rem 0.5rem 0.5rem; }
+      @media screen and (max-width: 1024px) {
+        .site-main section .left {
+          margin: 0.4rem 0.8rem 0.4rem 0.6rem; } }
+      @media screen and (max-width: 768px) {
+        .site-main section .left {
+          margin: 0.3rem 0.6rem 0.3rem 0.6rem; } }
+      @media screen and (max-width: 480px) {
+        .site-main section .left {
+          margin: 0.2rem 0.5rem 0.2rem 0.5rem; } }
     .site-main section .right {
       float: right;
       margin: 0.5rem 0.5rem 0.5rem 1rem; }
+      @media screen and (max-width: 1024px) {
+        .site-main section .right {
+          margin: 0.4rem 0.6rem 0.4rem 0.8rem; } }
+      @media screen and (max-width: 768px) {
+        .site-main section .right {
+          margin: 0.3rem 0.6rem 0.3rem 0.6rem; } }
+      @media screen and (max-width: 480px) {
+        .site-main section .right {
+          margin: 0.2rem 0.5rem 0.2rem 0.5rem; } }
     .site-main section img {
       box-shadow: 0 0 1em #152f63; }
   .site-main .metro img {
-    width: 300px; }
+    width: 250px; }
+    @media screen and (max-width: 768px) {
+      .site-main .metro img {
+        width: 200px; } }
+    @media screen and (max-width: 480px) {
+      .site-main .metro img {
+        width: 150px; } }

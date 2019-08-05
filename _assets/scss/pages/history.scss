@@ -1,3 +1,9 @@
+@mixin mq($width) {
+    @media screen and (max-width: $width){
+        @content;
+    }
+}
+
 .site{
     &-main{
         color: rgb(21, 47, 99);
@@ -21,22 +27,64 @@
             padding-bottom: 2rem;
             font-size: 15px;
 
+            @include mq(1024px){
+                font-size: 13px;
+            }
+    
+            @include mq(768px){
+                font-size: 11px;
+            }
+    
+            @include mq(480px){
+                font-size: 10px;
+            }
+
             &:last-of-type{
                 border: none;
             }
 
             p{
                 padding: 0.5rem;
+                @include mq(768px){
+                    padding: 0.3rem;
+                }
+                @include mq(480px){
+                    padding: 0.2rem;
+                }
             }
 
             .left{
                 float: left;
                 margin: 0.5rem 1rem 0.5rem 0.5rem;
+
+                @include mq(1024px){
+                    margin: 0.4rem 0.8rem 0.4rem 0.6rem;
+                }
+        
+                @include mq(768px){
+                    margin: 0.3rem 0.6rem 0.3rem 0.6rem;
+                }
+        
+                @include mq(480px){
+                    margin: 0.2rem 0.5rem 0.2rem 0.5rem;
+                }
             }
 
             .right{
                 float: right;
                 margin: 0.5rem 0.5rem 0.5rem 1rem;
+
+                @include mq(1024px){
+                    margin: 0.4rem 0.6rem 0.4rem 0.8rem;
+                }
+        
+                @include mq(768px){
+                    margin: 0.3rem 0.6rem 0.3rem 0.6rem;
+                }
+        
+                @include mq(480px){
+                    margin: 0.2rem 0.5rem 0.2rem 0.5rem;
+                }
             }
 
             img{
@@ -44,7 +92,13 @@
             } 
         }
         .metro img{
-            width: 300px;
+            width: 250px;
+            @include mq(768px){
+                width: 200px;
+            }
+            @include mq(480px){
+                width: 150px;
+            }
         }
     }
 }

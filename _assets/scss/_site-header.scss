@@ -2,17 +2,17 @@
     &-header {
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/solaris-new.jpg') no-repeat;
         background-size: cover;
-        background-position: 3% 97%;
-        padding: 1rem 0;
         text-shadow: 1px 3px 3px rgb(31, 31, 31);
-        height: 450px;
         color: #fff;
         letter-spacing: 0.1em;
+        padding: 1rem 0;
+        background-position: 3% 97%;
+        height: 450px;
 
         .wrapper{
             display: flex;
-            width: 92%;
-            margin: 0 auto;
+            width: 100%;
+            margin: 0 3rem;
             align-items: center;
             font-size: 20px;
             .site-logo {
@@ -23,6 +23,7 @@
                 padding: 1em 0;
                 text-decoration: none;
                 letter-spacing: 0.1em;
+                animation: slideToRight 0.4s ease-in-out;
                 
                 i {
                     font-size: 30px;
@@ -75,22 +76,23 @@
             align-items: center;
             margin-left: auto;
             li{
+                display: block;
                 list-style-type: none;
                 margin-right: 3.5rem;
-                opacity: 0;
-                transform: translateY(-1em);
-                transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+                animation: slideToRight 0.4s ease-in-out;
 
-                @for $i from 1 through 10 {
-                    &:nth-child(#{$i}) { transition-delay: 0.2s * $i;}
+                @for $i from 1 through 5{
+                    &:nth-child(#{$i}){
+                        animation-delay: $i * 0.1s;
+                    }
                 }
-
                 a{
                     letter-spacing: 0.15em;
                     color: #fff;
                     text-decoration: none;
                     font-weight: bold;
                     padding-bottom: 0.5rem;
+                    
                     
                     &:hover{
                         border-bottom: 1px solid white;
@@ -103,3 +105,4 @@
         }
     }
 }
+

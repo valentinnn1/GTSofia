@@ -36,8 +36,37 @@
       .site-main section .second-part h4 {
         padding-bottom: 0.5rem; }
       .site-main section .second-part li {
-        flex: 0 0 20%; }
+        flex: 0 0 15%; }
         .site-main section .second-part li a {
           color: #152f63; }
           .site-main section .second-part li a:hover {
             color: #6b6b6b; }
+    @media screen and (max-width: 1024px) {
+      .site-main section {
+        font-size: 18px; } }
+    @media screen and (max-width: 768px) {
+      .site-main section {
+        font-size: 16px; }
+        .site-main section .first-part {
+          width: 260px;
+          padding-right: 0; } }
+    @media screen and (max-width: 480px) {
+      .site-main section {
+        display: block;
+        font-size: 14px;
+        padding-bottom: 0; }
+        .site-main section .first-part {
+          width: 100%;
+          margin: 0 auto;
+          padding-right: 0; }
+        .site-main section h4 {
+          text-align: center;
+          padding-top: 1rem; }
+        .site-main section .social-icons {
+          padding: 0;
+          width: 200px;
+          margin: 0 auto; }
+        .site-main section .second-part {
+          padding-left: 0; }
+          .site-main section .second-part li {
+            flex-basis: 10%; } }

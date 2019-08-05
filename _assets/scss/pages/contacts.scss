@@ -1,3 +1,9 @@
+@mixin mq($width) {
+    @media screen and (max-width: $width){
+        @content;
+    }
+}
+
 .site{
     &-main{
         color: rgb(21, 47, 99);
@@ -23,7 +29,9 @@
             font-size: 20px;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: center;          
+
+            
 
             li{
                 list-style: none;
@@ -55,7 +63,7 @@
                 }
 
                 li{
-                    flex: 0 0 20%;
+                    flex: 0 0 15%;
                     
                     a{
                         color: rgb(21, 47, 99);
@@ -63,6 +71,43 @@
                         &:hover{
                             color: rgb(107, 107, 107);
                         }
+                    }
+                }
+            }
+            @include mq(1024px){
+                font-size: 18px;
+            }
+    
+            @include mq(768px){
+                font-size: 16px;
+                .first-part{
+                    width: 260px;
+                    padding-right: 0;
+                }
+            }
+            
+            @include mq(480px) {
+                display: block;
+                font-size: 14px;
+                padding-bottom: 0;
+                .first-part{
+                    width: 100%;
+                    margin: 0 auto;
+                    padding-right: 0;
+                }
+                h4{
+                    text-align: center;
+                    padding-top: 1rem;
+                }
+                .social-icons{
+                    padding: 0;
+                    width: 200px;
+                    margin: 0 auto;
+                }
+                .second-part{
+                    padding-left: 0;
+                    li{
+                        flex-basis: 10%;
                     }
                 }
             }

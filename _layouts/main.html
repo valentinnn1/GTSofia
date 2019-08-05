@@ -25,7 +25,18 @@
                     <i class="fas fa-bus-alt"></i>
                     <p class="site-title">ГТ София</p>
                 </a>
-                {% include navigation.html location="header" %}
+                <nav class="site-nav">
+                    <ul>
+                        {% assign nav = site.pages | sort:"order" %}
+                        {% for item in nav %}
+                        {% if item.title %}
+                        <li {% if item.url == page.url %} class="selected" {% endif %}>
+                            <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </nav>
             </div>
             <section>
                 <h1>Градски транспорт в София</h1>
