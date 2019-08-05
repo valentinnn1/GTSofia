@@ -20,6 +20,15 @@ html {
   html {
     font-size: 16px; } }
 
+.site .hamburger_checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0; }
+
+.site .hamburger_label {
+  display: none; }
+
 .site-header {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/solaris-new.jpg") no-repeat;
   background-size: cover;
@@ -28,18 +37,19 @@ html {
   letter-spacing: 0.1em;
   padding: 1rem 0;
   background-position: 3% 97%;
-  height: 450px; }
+  height: 450px;
+  width: 100%; }
   .site-header .wrapper {
     display: flex;
-    width: 100%;
     margin: 0 3rem;
     align-items: center;
-    font-size: 20px; }
+    font-size: 20px;
+    position: -webkit-sticky;
+    position: sticky; }
     .site-header .wrapper .site-logo {
       align-items: center;
       display: flex;
       color: #fff;
-      width: 15%;
       padding: 1em 0;
       text-decoration: none;
       letter-spacing: 0.1em;
@@ -55,11 +65,41 @@ html {
       font-size: 50px;
       padding-bottom: 0.3em;
       padding-top: 4rem; }
+      @media screen and (max-width: 1024px) {
+        .site-header section h1 {
+          font-size: 44px; } }
+      @media screen and (max-width: 768px) {
+        .site-header section h1 {
+          font-size: 38px; } }
+      @media screen and (max-width: 640px) {
+        .site-header section h1 {
+          font-size: 32px; } }
+      @media screen and (max-width: 480px) {
+        .site-header section h1 {
+          font-size: 28px; } }
     .site-header section p {
       font-size: 20px;
       width: 35%;
       margin: 0 auto;
       margin-bottom: 2.5rem; }
+      @media screen and (max-width: 1024px) {
+        .site-header section p {
+          font-size: 18px;
+          width: 40%; } }
+      @media screen and (max-width: 768px) {
+        .site-header section p {
+          font-size: 18px;
+          width: 55%;
+          margin-bottom: 2rem; } }
+      @media screen and (max-width: 640px) {
+        .site-header section p {
+          font-size: 16px;
+          width: 70%;
+          margin-bottom: 1.5rem; } }
+      @media screen and (max-width: 480px) {
+        .site-header section p {
+          font-size: 14px;
+          width: 80%; } }
     .site-header section a {
       color: white;
       background-color: #152f63;
@@ -75,23 +115,38 @@ html {
       transition: background-color 0.4s ease-in-out; }
       .site-header section a:hover {
         background-color: #6b6b6b; }
+      @media screen and (max-width: 1024px) {
+        .site-header section a {
+          padding: 0.7rem 2.5rem;
+          font-size: 16px; } }
+      @media screen and (max-width: 768px) {
+        .site-header section a {
+          padding: 0.6rem 2.1rem;
+          font-size: 14px; } }
+      @media screen and (max-width: 640px) {
+        .site-header section a {
+          padding: 0.5rem 1.7rem;
+          font-size: 12px; } }
+      @media screen and (max-width: 480px) {
+        .site-header section a {
+          padding: 0.4rem 1.5rem; } }
 
 .site-nav {
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  margin-left: auto;
   align-items: center; }
   .site-nav ul {
     display: flex;
-    align-items: center;
-    margin-left: auto; }
+    margin: 0 auto;
+    width: 100%; }
     .site-nav ul li {
       display: block;
       list-style-type: none;
       margin-right: 3.5rem;
       -webkit-animation: slideToRight 0.4s ease-in-out;
-              animation: slideToRight 0.4s ease-in-out; }
+              animation: slideToRight 0.4s ease-in-out;
+      padding: 0.5rem 0; }
       .site-nav ul li:nth-child(1) {
         -webkit-animation-delay: 0.1s;
                 animation-delay: 0.1s; }
@@ -117,6 +172,67 @@ html {
           border-bottom: 1px solid white; }
     .site-nav ul .selected a {
       border-bottom: 1px solid white; }
+
+@media screen and (max-width: 1024px) {
+  .site .wrapper .hamburger_label {
+    display: block;
+    margin-left: auto; }
+    .site .wrapper .hamburger_label:hover {
+      cursor: pointer; }
+  .site .wrapper .site-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    display: none; }
+    .site .wrapper .site-nav ul {
+      opacity: 0;
+      display: flex;
+      flex-direction: column; }
+      .site .wrapper .site-nav ul li {
+        opacity: 0;
+        transition: opacity 0.15s ease-in;
+        background: #fff;
+        color: black;
+        width: 100%;
+        background: #152f63;
+        text-align: center;
+        margin-right: 0; }
+        .site .wrapper .site-nav ul li a:hover {
+          border: none; }
+  .site .hamburger_checkbox:checked + .site-header .hamburger_label {
+    margin-left: auto; }
+  .site .hamburger_checkbox:checked + .site-header .site-nav {
+    display: block;
+    position: static;
+    opacity: 1; }
+    .site .hamburger_checkbox:checked + .site-header .site-nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      opacity: 1;
+      width: 100%;
+      position: absolute;
+      top: 4.5em;
+      left: 0;
+      right: 10em; }
+      .site .hamburger_checkbox:checked + .site-header .site-nav ul li {
+        margin: 0;
+        text-align: center;
+        padding: 0.7em 0;
+        opacity: 1;
+        width: 100%;
+        background: #152f63;
+        -webkit-animation: none;
+                animation: none;
+        /*&:nth-child(2) {transition-delay: 0.1s}
+                        &:nth-child(3) {transition-delay: 0.2s}
+                        &:nth-child(4) {transition-delay: 0.3s}
+                        */ }
+        .site .hamburger_checkbox:checked + .site-header .site-nav ul li:last-child {
+          padding-bottom: 0.8em; }
+        .site .hamburger_checkbox:checked + .site-header .site-nav ul li:last-child {
+          margin-bottom: 1em; } }
 
 .site-footer {
   background: #152f63;
