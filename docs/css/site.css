@@ -39,6 +39,19 @@ html {
   background-position: 3% 97%;
   height: 450px;
   width: 100%; }
+  @media screen and (max-width: 1024px) {
+    .site-header {
+      height: 400px; } }
+  @media screen and (max-width: 768px) {
+    .site-header {
+      height: 350px;
+      background-position: 25% 75%; } }
+  @media screen and (max-width: 640px) {
+    .site-header {
+      background-position: 35% 65%; } }
+  @media screen and (max-width: 480px) {
+    .site-header {
+      background-position: 55% 45%; } }
   .site-header .wrapper {
     display: flex;
     margin: 0 3rem;
@@ -58,6 +71,12 @@ html {
       .site-header .wrapper .site-logo i {
         font-size: 30px;
         padding-right: 1rem; }
+      @media screen and (max-width: 640px) {
+        .site-header .wrapper .site-logo p {
+          font-size: 18px; } }
+      @media screen and (max-width: 480px) {
+        .site-header .wrapper .site-logo p {
+          font-size: 16px; } }
   .site-header section {
     display: block;
     text-align: center; }
@@ -76,7 +95,11 @@ html {
           font-size: 32px; } }
       @media screen and (max-width: 480px) {
         .site-header section h1 {
-          font-size: 28px; } }
+          font-size: 28px;
+          padding-top: 3rem; } }
+      @media screen and (max-width: 320px) {
+        .site-header section h1 {
+          padding-top: 2rem; } }
     .site-header section p {
       font-size: 20px;
       width: 35%;
@@ -100,6 +123,9 @@ html {
         .site-header section p {
           font-size: 14px;
           width: 80%; } }
+      @media screen and (max-width: 320px) {
+        .site-header section p {
+          margin-bottom: 0.5rem; } }
     .site-header section a {
       color: white;
       background-color: #152f63;
@@ -174,6 +200,12 @@ html {
       border-bottom: 1px solid white; }
 
 @media screen and (max-width: 1024px) {
+  .site .wrapper .icon:before {
+    display: inline-block;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900; }
+  .site .wrapper .icon-hamburger:before {
+    content: '\f0c9'; }
   .site .wrapper .hamburger_label {
     display: block;
     margin-left: auto; }
@@ -184,7 +216,8 @@ html {
     top: 0;
     left: 0;
     opacity: 0;
-    display: none; }
+    display: none;
+    margin-left: 0; }
     .site .wrapper .site-nav ul {
       opacity: 0;
       display: flex;
@@ -197,9 +230,12 @@ html {
         width: 100%;
         background: #152f63;
         text-align: center;
-        margin-right: 0; }
+        margin-right: 0;
+        font-size: 16px; }
         .site .wrapper .site-nav ul li a:hover {
           border: none; }
+  .site .hamburger_checkbox:checked + .site-header .icon-hamburger:before {
+    content: '\f00d'; }
   .site .hamburger_checkbox:checked + .site-header .hamburger_label {
     margin-left: auto; }
   .site .hamburger_checkbox:checked + .site-header .site-nav {
@@ -213,24 +249,25 @@ html {
       opacity: 1;
       width: 100%;
       position: absolute;
-      top: 4.5em;
-      left: 0;
-      right: 10em; }
+      top: 4em;
+      left: 0; }
       .site .hamburger_checkbox:checked + .site-header .site-nav ul li {
         margin: 0;
         text-align: center;
         padding: 0.7em 0;
         opacity: 1;
         width: 100%;
-        background: #152f63;
+        background: #071227;
         -webkit-animation: none;
                 animation: none;
         /*&:nth-child(2) {transition-delay: 0.1s}
                         &:nth-child(3) {transition-delay: 0.2s}
                         &:nth-child(4) {transition-delay: 0.3s}
                         */ }
+        .site .hamburger_checkbox:checked + .site-header .site-nav ul li:first-child {
+          padding-top: 1.5em; }
         .site .hamburger_checkbox:checked + .site-header .site-nav ul li:last-child {
-          padding-bottom: 0.8em; }
+          padding-bottom: 2em; }
         .site .hamburger_checkbox:checked + .site-header .site-nav ul li:last-child {
           margin-bottom: 1em; } }
 

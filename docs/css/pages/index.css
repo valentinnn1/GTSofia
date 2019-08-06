@@ -3,7 +3,7 @@
   padding-top: 1rem; }
   .site-main .news-section:after {
     content: '';
-    width: 700px;
+    width: 80%;
     height: 1px;
     background-color: #bdbdbd;
     display: block;
