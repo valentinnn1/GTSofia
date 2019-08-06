@@ -8,49 +8,379 @@ css: vehicles
 
 <main>
     <h2>Подвижен състав</h2>
-    <h3>Автобуси</h3>
-    <section class="buses">
-        <img src="../img/vb1.jpg">
-        <img src="../img/vb3.jpg">
-        <img src="../img/vb4.jpg">
-        <img src="../img/vb5.jpg">
-        <img src="../img/vb8.jpg">
-        <img src="../img/vb9.jpg">
-        <img src="../img/vb11.jpg">
-        <img src="../img/vb12.jpg">
-        <img src="../img/vb13.jpg">
-        <img src="../img/vb14.png">
-        <img src="../img/vb15.jpg">
-        <img src="../img/vb16.jpg">
-        <img src="../img/vb17.jpg">
-        <img src="../img/vb18.jpg">
-        <img src="../img/vb19.jpg">
-        <img src="../img/vb20.jpg">
-    </section>
-    <h3>Тролейбуси</h3>
-    <section class="trolleybuses">
-        <img src="../img/vtb1.jpg">
-        <img src="../img/vtb2.png">
-        <img src="../img/vtb3.jpg">
-        <img src="../img/vtb4.png">
-    </section>
-    <h3>Трамваи</h3>
-    <section class="trams">
-        <img src="../img/vtm1.jpg">
-        <img src="../img/vtm2.jpg">
-        <img src="../img/vtm3.jpg">
-        <img src="../img/vtm4.jpg">
-        <img src="../img/vtm5.jpg">
-        <img src="../img/vtm6.jpg">
-        <img src="../img/vtm7.jpg">
-        <img src="../img/vtm8.jpg">
-        <img src="../img/vtm9.jpg">
-        <img src="../img/vtm10.jpg">
-        <img src="../img/vtm11.jpg">
-    </section>
-    <h3>Метро</h3>
-    <section class="metro">
-        <img src="../img/vm1.jpg">
-        <img src="../img/vm2.jpg">
-    </section>
+    <h3 class="vehicle-type">АВТОБУСИ</h3>
+    <ul class="buses">
+        <li>
+            <input type="checkbox" name="image_checkbox1" id="image_checkbox1">
+            <label for="image_checkbox1">
+                <img src="../img/vb1.jpg">
+                <h3 class="img-description">Mercedes-Benz Türk O345</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vb1.jpg" target="_blank">
+                <span><img src="../img/vb1.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox1"><i class="fas fa-times"></i></label>
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox2" id="image_checkbox2">
+            <label for="image_checkbox2">
+                <img src="../img/vb3.jpg">
+                <h3 class="img-description">Mercedes-Benz O405</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vb3.jpg" target="_blank">
+                <span><img src="../img/vb3.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox2"><i class="fas fa-times"></i></label>
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox3" id="image_checkbox3">
+            <label for="image_checkbox3">
+                <img src="../img/vb4.jpg">
+                <h3 class="img-description">BMC Belde 220 SLF</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vb4.jpg" target="_blank">
+                <span><img src="../img/vb4.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox3"><i class="fas fa-times"></i></label>
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox4" id="image_checkbox4">
+            <label for="image_checkbox4">
+                <img src="../img/vb5.jpg">
+                <h3 class="img-description">МАN SG 262</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vb5.jpg" target="_blank">
+                <span><img src="../img/vb5.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox4"><i class="fas fa-times"></i></label>    
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox5" id="image_checkbox5">
+            <label for="image_checkbox5">
+                <img src="../img/vb8.jpg">
+                <h3 class="img-description">MAN Lion's City G CNG доставка 2019г.</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vb8.jpg" target="_blank">
+                <span><img src="../img/vb8.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox5"><i class="fas fa-times"></i></label>    
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox6" id="image_checkbox6">
+            <label for="image_checkbox6">
+                <img src="../img/vb9.jpg">
+                <h3 class="img-description">Mercedes-Benz Conecto LF</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vb9.jpg" target="_blank">
+                <span><img src="../img/vb9.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox6"><i class="fas fa-times"></i></label>    
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox7" id="image_checkbox7">
+            <label for="image_checkbox7">
+                <img src="../img/vb11.jpg">
+                <h3 class="img-description">Mercedes-Benz Türk O345G</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vb11.jpg" target="_blank">
+                <span><img src="../img/vb11.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox7"><i class="fas fa-times"></i></label>    
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox8" id="image_checkbox8">
+            <label for="image_checkbox8">
+                <img src="../img/vb12.jpg">
+                <h3 class="img-description">Mercedes Intouro</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vb12.jpg" target="_blank">
+                <span><img src="../img/vb12.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox8"><i class="fas fa-times"></i></label>    
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox9" id="image_checkbox9">
+            <label for="image_checkbox9">
+                <img src="../img/vb13.jpg">
+                <h3 class="img-description">MAN Lion's City G CNG доставка 2014-2015г.</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vb13.jpg" target="_blank">
+                <span><img src="../img/vb13.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox9"><i class="fas fa-times"></i></label>    
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox10" id="image_checkbox10">
+            <label for="image_checkbox10">
+                <img src="../img/vb14.png">
+                <h3 class="img-description">BMC Procity CNG</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vb14.png" target="_blank">
+                <span><img src="../img/vb14.png"></span>
+            </a>
+            <label class="close" for="image_checkbox10"><i class="fas fa-times"></i></label>    
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox11" id="image_checkbox11">
+            <label for="image_checkbox11">
+                <img src="../img/vb15.jpg">
+                <h3 class="img-description">Yutong ZK6126HGA CNG</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vb15.jpg" target="_blank">
+                <span><img src="../img/vb15.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox11"><i class="fas fa-times"></i></label>    
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox12" id="image_checkbox12">
+            <label for="image_checkbox12">
+                <img src="../img/vb16.jpg">
+                <h3 class="img-description">Yutong ZK6126HGA</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vb16.jpg" target="_blank">
+                <span><img src="../img/vb16.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox12"><i class="fas fa-times"></i></label>    
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox13" id="image_checkbox13">
+            <label for="image_checkbox13">
+                <img src="../img/vb17.jpg">
+                <h3 class="img-description">TEDOM C12G</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vb17.jpg" target="_blank">
+                <span><img src="../img/vb17.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox13"><i class="fas fa-times"></i></label>    
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox14" id="image_checkbox14">
+            <label for="image_checkbox14">
+                <img src="../img/vb18.jpg">
+                <h3 class="img-description">Yutong E12LF</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vb18.jpg" target="_blank">
+                <span><img src="../img/vb18.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox14"><i class="fas fa-times"></i></label>    
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox15" id="image_checkbox15">
+            <label for="image_checkbox15">
+                <img src="../img/vb20.jpg">
+                <h3 class="img-description">Mercedes-Benz Conecto LF G</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vb20.jpg" target="_blank">
+                <span><img src="../img/vb20.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox15"><i class="fas fa-times"></i></label>    
+        </li>
+    </ul>
+    <h3 class="vehicle-type">ТРОЛЕЙБУСИ</h3>
+    <ul class="trolleybuses">
+        <li>
+            <input type="checkbox" name="image_checkbox16" id="image_checkbox16">
+            <label for="image_checkbox16">
+                <img src="../img/vtb1.jpg">
+                <h3 class="img-description">Škoda 26Tr Solaris</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vtb1.jpg" target="_blank">
+                <span><img src="../img/vtb1.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox16"><i class="fas fa-times"></i></label>    
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox17" id="image_checkbox17">
+            <label for="image_checkbox17">
+                <img src="../img/vtb2.png">
+                <h3 class="img-description">Ikarus 280.92</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vtb2.png" target="_blank">
+                <span><img src="../img/vtb2.png"></span>
+            </a>
+            <label class="close" for="image_checkbox17"><i class="fas fa-times"></i></label>    
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox18" id="image_checkbox18">
+            <label for="image_checkbox18">
+                <img src="../img/vtb3.jpg">
+                <h3 class="img-description">Škoda 27Tr Solaris</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vtb3.jpg" target="_blank">
+                <span><img src="../img/vtb3.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox18"><i class="fas fa-times"></i></label>    
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox19" id="image_checkbox19">
+            <label for="image_checkbox19">
+                <img src="../img/vtb4.png">
+                <h3 class="img-description">Ikarus 280.92F</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vtb4.png" target="_blank">
+                <span><img src="../img/vtb4.png"></span>
+            </a>
+            <label class="close" for="image_checkbox19"><i class="fas fa-times"></i></label>    
+        </li>
+    </ul>
+    <h3 class="vehicle-type">ТРАМВАИ</h3>
+    <ul class="trams">
+        <li>
+            <input type="checkbox" name="image_checkbox20" id="image_checkbox20">
+            <label for="image_checkbox20">
+                <img src="../img/vtm1.jpg">
+                <h3 class="img-description">Schindler Waggon AG Be 4/6</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vtm1.jpg" target="_blank">
+                <span><img src="../img/vtm1.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox20"><i class="fas fa-times"></i></label>    
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox21" id="image_checkbox21">
+            <label for="image_checkbox21">
+                <img src="../img/vtm2.jpg">
+                <h3 class="img-description">Tatra T4D-M</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vtm2.jpg" target="_blank">
+                <span><img src="../img/vtm2.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox21"><i class="fas fa-times"></i></label>    
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox22" id="image_checkbox22">
+            <label for="image_checkbox22">
+                <img src="../img/vtm3.jpg">
+                <h3 class="img-description">Tatra T6B5B</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vtm3.jpg" target="_blank">
+                <span><img src="../img/vtm3.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox22"><i class="fas fa-times"></i></label>    
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox23" id="image_checkbox23">
+            <label for="image_checkbox23">
+                <img src="../img/vtm4.jpg">
+                <h3 class="img-description">Duewag GT8</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vtm4.jpg" target="_blank">
+                <span><img src="../img/vtm4.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox23"><i class="fas fa-times"></i></label>    
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox24" id="image_checkbox24">
+            <label for="image_checkbox24">
+                <img src="../img/vtm5.jpg">
+                <h3 class="img-description">Tatra T6A2SF</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vtm5.jpg" target="_blank">
+                <span><img src="../img/vtm5.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox24"><i class="fas fa-times"></i></label>    
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox25" id="image_checkbox25">
+            <label for="image_checkbox25">
+                <img src="../img/vtm6.jpg">
+                <h3 class="img-description">Т8М-900F и Т8К-500F</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vtm6.jpg" target="_blank">
+                <span><img src="../img/vtm6.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox25"><i class="fas fa-times"></i></label>    
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox26" id="image_checkbox26">
+            <label for="image_checkbox26">
+                <img src="../img/vtm7.jpg">
+                <h3 class="img-description">Tatra T6A5</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vtm7.jpg" target="_blank">
+                <span><img src="../img/vtm7.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox26"><i class="fas fa-times"></i></label>    
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox27" id="image_checkbox27">
+            <label for="image_checkbox27">
+                <img src="../img/vtm8.jpg">
+                <h3 class="img-description">Т6М-700F</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vtm8.jpg" target="_blank">
+                <span><img src="../img/vtm8.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox27"><i class="fas fa-times"></i></label>    
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox28" id="image_checkbox28">
+            <label for="image_checkbox28">
+                <img src="../img/vtm9.jpg">
+                <h3 class="img-description">ČKD Tatra T4D-C</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vtm9.jpg" target="_blank">
+                <span><img src="../img/vtm9.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox28"><i class="fas fa-times"></i></label>    
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox29" id="image_checkbox29">
+            <label for="image_checkbox29">
+                <img src="../img/vtm10.jpg">
+                <h3 class="img-description">Inekon T8M-700IT</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vtm10.jpg" target="_blank">
+                <span><img src="../img/vtm10.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox29"><i class="fas fa-times"></i></label>    
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox30" id="image_checkbox30">
+            <label for="image_checkbox30">
+                <img src="../img/vtm11.jpg">
+                <h3 class="img-description">PESA Swing 122NaSF</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vtm11.jpg" target="_blank">
+                <span><img src="../img/vtm11.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox30"><i class="fas fa-times"></i></label>    
+        </li>
+    </ul>
+    <h3 class="vehicle-type">МЕТРО</h3>
+    <ul class="metro">
+        <li>
+            <input type="checkbox" name="image_checkbox31" id="image_checkbox31">
+            <label for="image_checkbox31">
+                <img src="../img/vm1.jpg">
+                <h3 class="img-description">Тип 81 – 740.2/741.2 и 81 – 740.2Б/741.2Б</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vm1.jpg" target="_blank">
+                <span><img src="../img/vm1.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox31"><i class="fas fa-times"></i></label>    
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox32" id="image_checkbox32">
+            <label for="image_checkbox32">
+                <img src="../img/vm2.jpg">
+                <h3 class="img-description">Тип 81 – 717.4/81 – 714.4</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vm2.jpg" target="_blank">
+                <span><img src="../img/vm2.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox32"><i class="fas fa-times"></i></label>    
+        </li>
+        <li>
+            <input type="checkbox" name="image_checkbox33" id="image_checkbox33">
+            <label for="image_checkbox33">
+                <img src="../img/vm3.jpg">
+                <h3 class="img-description">Siemens Inspiro</h3>
+            </label>
+            <a href="{{ site.baseurl }}/img/vm3.jpg" target="_blank">
+                <span><img src="../img/vm3.jpg"></span>
+            </a>
+            <label class="close" for="image_checkbox33"><i class="fas fa-times"></i></label>    
+        </li>
+    </ul>
 </main>
