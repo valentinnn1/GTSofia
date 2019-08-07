@@ -1,0 +1,18 @@
+.site {
+    &-main {
+        opacity: 0;
+        transform: translateY(-2em);
+        transition: opacity 0.2s ease-in, transform 0.2s ease-in-out;
+        transition-delay: 1.1s;
+        @include mq(1024px){
+            transition-delay: 0.3s;
+        }
+
+        @at-root body.loaded {
+            .site-main {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+}

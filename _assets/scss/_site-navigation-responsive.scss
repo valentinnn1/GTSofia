@@ -1,0 +1,106 @@
+@media screen and (max-width: 1024px) {
+    .site {
+        .wrapper {
+            .icon:before {
+                display: inline-block;
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
+            }
+            .icon-hamburger:before {
+                content: '\f0c9';
+            }
+            .hamburger_label {
+                display: block;
+                margin-left: auto;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+            .site-nav {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                margin-left: 0;
+        
+                ul {
+                    opacity: 0;
+                    display: flex;
+                    flex-direction: column;
+        
+                    li {
+                        opacity: 0;
+                        width: 100%;
+                        font-size: 16px;
+                        transition: opacity 0.35s ease-in;
+                        a {
+                            &:hover {
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }      
+        } 
+        
+        .hamburger_checkbox:checked + .site-header {
+            .icon-hamburger:before {
+                content: '\f00d';
+            }
+            .hamburger_label {
+                margin-left: auto;
+            }
+            .site-nav {
+                display: block;
+                position: static;
+                opacity: 1;
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    opacity: 1;
+                    width: 100%;
+                    position: absolute;
+                    top: 4em; left: 0;
+    
+                    li {
+                        margin: 0;
+                        text-align: center;
+                        padding: 0.7em 0;
+                        opacity: 1;
+                        width: 100%;
+                        background: rgb(7, 18, 39);
+                    
+
+                        &:hover{
+                            a{
+                                color: rgb(98, 117, 153);
+                            }
+                        }
+
+                        &:first-child {padding-top: 1.5em;}
+                        &:last-child {padding-bottom: 2em;}
+
+                        @for $i from 1 through 5{
+                            &:nth-child(#{$i}){
+                                transition-delay: $i * 0.1s;
+                            }
+                        }
+                        &:last-child {
+                            margin-bottom: 1em;
+                        }
+                    }
+                    .selected{
+                        background: rgb(29, 65, 131);
+
+                        a {
+                            border: none;
+                            background: rgb(29, 65, 131);
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
