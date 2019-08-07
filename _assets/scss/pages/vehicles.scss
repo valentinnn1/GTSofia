@@ -1,3 +1,9 @@
+@mixin mq($width) {
+    @media screen and (max-width: $width){
+        @content;
+    }
+}
+
 .site{
     &-main{
         margin: 1rem;
@@ -25,6 +31,10 @@
             grid-auto-flow: dense;
             justify-items: center;
 
+            @include mq(768px){
+                grid-template-columns: repeat(8, 1fr);
+            }
+
             li{
                 list-style: none;
                 outline: 4px solid rgb(21, 47, 99);
@@ -32,6 +42,14 @@
                 display: flex;
                 width: 100%;
                 box-shadow: 0 0 0.6em 0.3em rgb(21, 47, 99);
+
+                @include mq(768px){
+                    grid-column: span 4;
+                }
+    
+                @include mq(480px){
+                    grid-column: span 8;
+                }
 
                 &:hover{
                     .img-description{ opacity: 1 };
@@ -96,13 +114,13 @@
                         position: fixed;
                         top: 1em; right: 1em;
                         background: #000;
-                        color: #FFF;
+                        color: #fff;
                         z-index: 300;
                         cursor: pointer;
         
                         &:hover {
                             transform: scale(1.1);
-                            outline: 0.5em solid #FFF;
+                            outline: 0.2em solid #fff;
                         }
                     }
                 }
@@ -123,12 +141,32 @@
                     position: fixed;
                     top: 50%; left: 50%;
                     transform: translate(-50%, -50%);
-                    width: 50vw;
+                    width: 60vw;
                     height: 80vh;
                     overflow: hidden;
                     z-index: 100;
                     box-shadow: 0 0 100vw 100vw rgba(black, 0.9);
                     background: rgba(black, 0.9);
+
+                    @include mq(1024px){
+                        width: 70vw;
+                        height: 70vh;
+                    }
+            
+                    @include mq(768px){
+                        width: 60vw;
+                        height: 50vh;
+                    }
+
+                    @include mq(640px){
+                        width: 70vw;
+                        height: 40vh;
+                    }
+    
+                    @include mq(480px){
+                        width: 80vw;
+                        height: 30vh;
+                    }
         
                     span {
                         position: absolute;

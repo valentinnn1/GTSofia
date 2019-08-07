@@ -19,6 +19,9 @@
     grid-gap: 1em;
     grid-auto-flow: dense;
     justify-items: center; }
+    @media screen and (max-width: 768px) {
+      .site-main ul {
+        grid-template-columns: repeat(8, 1fr); } }
     .site-main ul li {
       list-style: none;
       outline: 4px solid #152f63;
@@ -26,6 +29,12 @@
       display: flex;
       width: 100%;
       box-shadow: 0 0 0.6em 0.3em #152f63; }
+      @media screen and (max-width: 768px) {
+        .site-main ul li {
+          grid-column: span 4; } }
+      @media screen and (max-width: 480px) {
+        .site-main ul li {
+          grid-column: span 8; } }
       .site-main ul li:hover .img-description {
         opacity: 1; }
       .site-main ul li input {
@@ -81,12 +90,12 @@
           top: 1em;
           right: 1em;
           background: #000;
-          color: #FFF;
+          color: #fff;
           z-index: 300;
           cursor: pointer; }
           .site-main ul li label.close:hover {
             transform: scale(1.1);
-            outline: 0.5em solid #FFF; }
+            outline: 0.2em solid #fff; }
       .site-main ul li input:checked ~ label.close {
         display: flex; }
       .site-main ul li input:checked ~ a {
@@ -97,12 +106,28 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 50vw;
+        width: 60vw;
         height: 80vh;
         overflow: hidden;
         z-index: 100;
         box-shadow: 0 0 100vw 100vw rgba(0, 0, 0, 0.9);
         background: rgba(0, 0, 0, 0.9); }
+        @media screen and (max-width: 1024px) {
+          .site-main ul li a {
+            width: 70vw;
+            height: 70vh; } }
+        @media screen and (max-width: 768px) {
+          .site-main ul li a {
+            width: 60vw;
+            height: 50vh; } }
+        @media screen and (max-width: 640px) {
+          .site-main ul li a {
+            width: 70vw;
+            height: 40vh; } }
+        @media screen and (max-width: 480px) {
+          .site-main ul li a {
+            width: 80vw;
+            height: 30vh; } }
         .site-main ul li a span {
           position: absolute;
           top: 0;
