@@ -4,13 +4,13 @@
     }
 }
 
-.site{
-    &-main{
+.site {
+    &-main {
         color: rgb(21, 47, 99);
-        h2{
+        h2 {
             text-align: center;
 
-            &:after{
+            &:after {
                 content: '';
                 width: 100px;
                 height: 2px;
@@ -19,92 +19,92 @@
                 margin: 1rem auto;
             }
         }
-        section{
+        section {
             border-bottom: 1px solid rgb(189, 189, 189);
             margin: 1rem auto;
             width: 90%;
             padding-bottom: 2rem;
             font-size: 15px;
 
-            @include mq(1024px){
+            @include mq(1024px) {
                 font-size: 13px;
                 padding-bottom: 1.5rem;
             }
     
-            @include mq(768px){
+            @include mq(768px) {
                 font-size: 11px;
                 padding-bottom: 1.2rem;
             }
     
-            @include mq(480px){
+            @include mq(480px) {
                 font-size: 10px;
                 padding-bottom: 0.7rem;
             }
 
-            &:last-of-type{
+            &:last-of-type {
                 border: none;
             }
 
-            p{
+            p {
                 padding: 0.5rem;
-                @include mq(768px){
+                @include mq(768px) {
                     padding: 0.3rem;
                 }
-                @include mq(480px){
+                @include mq(480px) {
                     padding: 0.2rem;
                 }
             }
 
-            .left{
+            .left {
                 float: left;
                 margin: 0.5rem 1rem 0.5rem 0.5rem;
 
-                @include mq(1024px){
+                @include mq(1024px) {
                     margin: 0.4rem 0.8rem 0.4rem 0.6rem;
                 }
         
-                @include mq(768px){
+                @include mq(768px) {
                     margin: 0.3rem 0.6rem 0.3rem 0.6rem;
                 }
         
-                @include mq(480px){
+                @include mq(480px) {
                     margin: 0.2rem 0.5rem 0.2rem 0.5rem;
                 }
             }
 
-            .right{
+            .right {
                 float: right;
                 margin: 0.5rem 0.5rem 0.5rem 1rem;
 
-                @include mq(1024px){
+                @include mq(1024px) {
                     margin: 0.4rem 0.6rem 0.4rem 0.8rem;
                 }
         
-                @include mq(768px){
+                @include mq(768px) {
                     margin: 0.3rem 0.6rem 0.3rem 0.6rem;
                 }
         
-                @include mq(480px){
+                @include mq(480px) {
                     margin: 0.2rem 0.5rem 0.2rem 0.5rem;
                 }
             }
 
-            img{
+            img {
                 box-shadow: 0 0 1em rgb(21, 47, 99);
-                @include mq(768px){
+                @include mq(768px) {
                     width: 150px;
                 }
-                @include mq(480px){
+                @include mq(480px) {
                     width: 100px;
                 }
             } 
         }
-        .metro img{
+        .metro img {
             width: 200px;
-            @include mq(768px){
+            @include mq(768px) {
                 width: 150px;
             }
-            @include mq(480px){
+            @include mq(480px) {
                 width: 100px;
             }
         }

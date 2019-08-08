@@ -1,4 +1,4 @@
-.site{
+.site {
     .hamburger_checkbox {
         position: absolute;
         top: 0;
@@ -19,24 +19,25 @@
         background-position: 3% 97%;
         height: 450px;
         width: 100%;
-        @include mq(1024px){
+
+        @include mq(1024px) {
             height: 400px;
         }
 
-        @include mq(768px){
+        @include mq(768px) {
             height: 350px;
             background-position: 25% 75%;
         }
 
-        @include mq(640px){
+        @include mq(640px) {
             background-position: 35% 65%;
         }
 
-        @include mq(480px){
+        @include mq(480px) {
             background-position: 55% 45%;
         }
 
-        .wrapper{
+        .wrapper {
             display: flex;
             margin: 0 3rem;
             align-items: center;
@@ -54,8 +55,8 @@
                 transform: translateX(-1em);
                 transition: opacity 0.3s ease-in, transform 0.3s ease-in-out;
 
-                @at-root body.loaded{
-                    .site-header .site-logo{
+                @at-root body.loaded {
+                    .site-header .site-logo {
                         opacity: 1;
                         transform: translateX(0);
                     }
@@ -65,12 +66,12 @@
                     font-size: 30px;
                     padding-right: 1rem;
                 }
-                p{
-                    @include mq(640px){
+                p {
+                    @include mq(640px) {
                         font-size: 18px;
                     }
     
-                    @include mq(480px){
+                    @include mq(480px) {
                         font-size: 16px;
                     }
                 }
@@ -84,23 +85,24 @@
                 font-size: 50px;
                 padding-bottom: 0.3em;
                 padding-top: 4rem;
-                @include mq(1024px){
+
+                @include mq(1024px) {
                     font-size: 44px;
                 }
         
-                @include mq(768px){
+                @include mq(768px) {
                     font-size: 38px;
                 }
 
-                @include mq(640px){
+                @include mq(640px) {
                     font-size: 32px;
                 }
 
-                @include mq(480px){
+                @include mq(480px) {
                     font-size: 28px;
                     padding-top: 3rem;
                 }
-                @include mq(320px){
+                @include mq(320px) {
                     padding-top: 2rem;
                 }
             }
@@ -109,32 +111,33 @@
                 width: 35%;
                 margin: 0 auto;
                 margin-bottom: 2.5rem;
-                @include mq(1024px){
+
+                @include mq(1024px) {
                     font-size: 18px;
                     width: 40%;
                 }
         
-                @include mq(768px){
+                @include mq(768px) {
                     font-size: 18px;
                     width: 55%;
                     margin-bottom: 2rem;
                 }
 
-                @include mq(640px){
+                @include mq(640px) {
                     font-size: 16px;
                     width: 70%;
                     margin-bottom: 1.5rem;
                 }
 
-                @include mq(480px){
+                @include mq(480px) {
                     font-size: 14px;
                     width: 80%;
                 }
-                @include mq(320px){
+                @include mq(320px) {
                     margin-bottom: 0.5rem;
                 }
             }
-            a{
+            a {
                 color: white;
                 background-color: rgb(21, 47, 99);
                 border-radius: 1.5rem;
@@ -147,25 +150,27 @@
                 margin-top: 0.8rem;
                 margin-bottom: 2rem;
                 transition: background-color 0.4s ease-in-out;
-                &:hover{
+
+                &:hover {
                     background-color: rgb(107, 107, 107);
                 }
-                @include mq(1024px){
+
+                @include mq(1024px) {
                     padding: 0.7rem 2.5rem;
                     font-size: 16px;
                 }
         
-                @include mq(768px){
+                @include mq(768px) {
                     padding: 0.6rem 2.1rem;
                     font-size: 14px;
                 }
 
-                @include mq(640px){
+                @include mq(640px) {
                     padding: 0.5rem 1.7rem;
                     font-size: 12px;
                 }
 
-                @include mq(480px){
+                @include mq(480px) {
                     padding: 0.4rem 1.5rem;
                 }
             }

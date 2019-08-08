@@ -4,16 +4,16 @@
     }
 }
 
-.site{
-    &-main{
+.site {
+    &-main {
         color: rgb(21, 47, 99);
         text-align: justify;
 
-        h2{
+        h2 {
             text-align: center;
             margin-top: 1rem;
 
-            &:after{
+            &:after {
                 content: '';
                 width: 100px;
                 height: 2px;
@@ -22,7 +22,7 @@
                 margin: 1rem auto;
             }
         }
-        section{
+        section {
             margin: 1rem auto;
             width: 90%;
             padding-bottom: 2rem;
@@ -31,56 +31,54 @@
             justify-content: center;
             align-items: center;          
 
-            
-
-            li{
+            li {
                 list-style: none;
             }
 
-            .social-icons{
+            .social-icons {
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
 
-            .first-part{
+            .first-part {
                 padding-right: 1.5rem;
                 
-                li{
+                li {
                     padding: 0.3rem;
                 }
 
-                i{
+                i {
                     width: 30px;
                 }
             }
 
-            .second-part{
+            .second-part {
                 padding-left: 1.5rem;
 
-                h4{
+                h4 {
                     padding-bottom: 0.5rem;
                 }
 
-                li{
+                li {
                     flex: 0 0 15%;
                     
-                    a{
+                    a {
                         color: rgb(21, 47, 99);
 
-                        &:hover{
+                        &:hover {
                             color: rgb(107, 107, 107);
                         }
                     }
                 }
             }
-            @include mq(1024px){
+            @include mq(1024px) {
                 font-size: 18px;
             }
     
-            @include mq(768px){
+            @include mq(768px) {
                 font-size: 16px;
-                .first-part{
+                .first-part {
                     width: 260px;
                     padding-right: 0;
                 }
@@ -90,23 +88,24 @@
                 display: block;
                 font-size: 14px;
                 padding-bottom: 0;
-                .first-part{
+                .first-part {
                     width: 100%;
                     margin: 0 auto;
                     padding-right: 0;
                 }
-                h4{
+                h4 {
                     text-align: center;
                     padding-top: 1rem;
                 }
-                .social-icons{
+                .social-icons {
                     padding: 0;
                     width: 200px;
                     margin: 0 auto;
                 }
-                .second-part{
+                .second-part {
                     padding-left: 0;
-                    li{
+                    
+                    li {
                         flex-basis: 10%;
                     }
                 }

@@ -71,10 +71,9 @@
                         opacity: 1;
                         width: 100%;
                         background: rgb(7, 18, 39);
-                    
 
-                        &:hover{
-                            a{
+                        &:hover {
+                            a {
                                 color: rgb(98, 117, 153);
                             }
                         }
@@ -91,7 +90,7 @@
                             margin-bottom: 1em;
                         }
                     }
-                    .selected{
+                    .selected {
                         background: rgb(29, 65, 131);
 
                         a {

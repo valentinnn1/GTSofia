@@ -1,14 +1,14 @@
-.site{
+.site {
     &-nav {
         display: flex;
         justify-content: space-between;
         margin-left: auto;
         align-items: center;
-        ul{
+        ul {
             display: flex;
             margin: 0 auto;
             width: 100%;
-            li{
+            li {
                 display: block;
                 list-style-type: none;
                 margin-right: 3.5rem;
@@ -17,15 +17,15 @@
                 transform: translateX(-1em);
                 transition: opacity 0.3s ease-in, transform 0.3s ease-in-out;
 
-                @at-root body.loaded{
-                    .site-nav li{
+                @at-root body.loaded {
+                    .site-nav li {
                         opacity: 1;
                         transform: translateX(0);
                     }
                 }
 
                 @for $i from 1 through 5{
-                    &:nth-child(#{$i}){
+                    &:nth-child(#{$i}) {
                         transition-delay: $i * 0.1s + 0.4s;
                     }
                 }
@@ -37,7 +37,7 @@
                     font-weight: bold;
                     padding-bottom: 0.5rem;
                     
-                    &:hover{
+                    &:hover {
                         border-bottom: 1px solid white;
                     }
                 }

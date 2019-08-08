@@ -4,13 +4,13 @@
     }
 }
 
-.site{
-    &-main{
-        .news-section{
+.site {
+    &-main {
+        .news-section {
             color: rgb(21, 47, 99);
             padding-top: 1rem;
 
-            &:after{
+            &:after {
                 content: '';
                 width: 80%;
                 height: 1px;
@@ -19,10 +19,10 @@
                 margin: 1rem auto;
             }
 
-            h2{
+            h2 {
                 text-align: center;
 
-                &:after{
+                &:after {
                     content: '';
                     width: 100px;
                     height: 2px;
@@ -31,139 +31,140 @@
                     margin: 1rem auto;
                 }
             }
-            .news{
+            .news {
                 display: flex;
                 justify-content: space-around;  
-                @include mq(768px){
+                @include mq(768px) {
                     flex-direction: column;
                 }     
-                li{
+                li {
                     flex: 0 0 30%;
                     padding-bottom: 2rem;
                     list-style: none;
 
-                    @include mq(768px){
+                    @include mq(768px) {
                         border-bottom: 1px solid rgb(189, 189, 189);
                         margin: 0.2rem auto;
                         width: 80%;
                         padding-bottom: 0.5rem;
                         text-align: center;
 
-                        h3{
-                            @include mq(1024px){
+                        h3 {
+                            @include mq(1024px) {
                                 font-size: 16px;
                             }
                     
-                            @include mq(768px){
+                            @include mq(768px) {
                                 font-size: 15px;
                             }
                         }
-                        &:last-of-type{
+                        &:last-of-type {
                             border: none;
                         }
                     }
-                    .date{
+                    .date {
                         color: grey;
                         padding: 0.4rem 0;
 
-                        @include mq(1024px){
+                        @include mq(1024px) {
                             font-size: 12px;
                             padding: 0.3rem 0;
                         }
                 
-                        @include mq(768px){
+                        @include mq(768px) {
                             font-size: 10px;
                             padding: 0.2rem 0;
                         }
                     }
-                    .news-description{
-                        @include mq(1024px){
+                    .news-description {
+                        @include mq(1024px) {
                             font-size: 14px;
                         }
                 
-                        @include mq(768px){
+                        @include mq(768px) {
                             font-size: 12px;
                         }
                     }
                 }
             }
-            .action{
+            .action {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 margin-bottom: 1rem;
-                @include mq(1024px){
+
+                @include mq(1024px) {
                     font-size: 14px;
                 }
         
-                @include mq(768px){
+                @include mq(768px) {
                     font-size: 12px;
                 }
 
-                a{
+                a {
                     text-decoration: none;
                     cursor: pointer;
                     color: rgb(21, 47, 99);
 
-                    i{
+                    i {
                         padding-left: 0.5rem;
                     }
-                    &:hover{
+                    &:hover {
                         text-decoration: underline;
                     } 
                 }   
             }
         }
-        .picofthemonth-section{
-            h2{
+        .picofthemonth-section {
+            h2 {
                 color: rgb(21, 47, 99);
                 text-align: center;
             }
-            .container{
+            .container {
                 display: block;
                 margin: 1.5rem auto;
                 position: relative;
                 width: 900px;
 
-                @include mq(1024px){
+                @include mq(1024px) {
                     width: 600px;
                 }
         
-                @include mq(768px){
+                @include mq(768px) {
                     width: 400px;
                 }
 
-                @include mq(640px){
+                @include mq(640px) {
                     width: 300px;
                 }
 
-                @include mq(480px){
+                @include mq(480px) {
                     width: 200px;
                 }
                 
-                img{
+                img {
                     display: block;
                     margin: 1rem auto;
                     height: auto;
                     width: 900px;
 
-                    @include mq(1024px){
+                    @include mq(1024px) {
                         width: 600px;
                     }
             
-                    @include mq(768px){
+                    @include mq(768px) {
                         width: 400px;
                     }
     
-                    @include mq(640px){
+                    @include mq(640px) {
                         width: 300px;
                     }
     
-                    @include mq(480px){
+                    @include mq(480px) {
                         width: 200px;
                     }
                 }
-                .overlay{
+                .overlay {
                     position: absolute;
                     bottom: 0;
                     left: 0;
@@ -172,23 +173,23 @@
                     width: 0;
                     height: 15%;
                     transition: width 0.5s ease-in;
-                    @include mq(1024px){
+                    @include mq(1024px) {
                         height: 25%;
                     }
             
-                    @include mq(768px){
+                    @include mq(768px) {
                         height: 35%;
                     }
 
-                    @include mq(640px){
+                    @include mq(640px) {
                         height: 40%;
                     }
 
-                    @include mq(480px){
+                    @include mq(480px) {
                         height: 45%;
                     }
 
-                    .text{
+                    .text {
                         text-align: center;
                         opacity: 0;
                         color: white;
@@ -196,56 +197,56 @@
                         top: 50%;
                         left: 50%;                      
                         transform: translate(-50%, -50%);
-                        @include mq(1024px){
+                        @include mq(1024px) {
                             font-size: 12px;
                         }
                 
-                        @include mq(768px){
+                        @include mq(768px) {
                             font-size: 11px;
                         }
     
-                        @include mq(640px){
+                        @include mq(640px) {
                             font-size: 10px;
                         }
     
-                        @include mq(480px){
+                        @include mq(480px) {
                             font-size: 9px;
                         }
                     }
                 }
-                &:hover .overlay{
+                &:hover .overlay {
                     width: 100%;
                 }
-                &:hover .text{
+                &:hover .text {
                     opacity: 1;
                 }
             }      
         }
-        .newinsite-section{
+        .newinsite-section {
             width: 100%;
             padding: 2rem 0;
             text-align: center;
             color: #fff;
             background: rgb(50, 88, 165);
 
-            h2{
+            h2 {
                 padding-bottom: 1rem;
             }
 
-            ul{
+            ul {
                 display: block;
                 width: 350px;
                 margin: 0 auto;
         
-                @include mq(768px){
+                @include mq(768px) {
                     width: 300px;
                 }
 
-                @include mq(480px){
+                @include mq(480px) {
                     width: 250px;
                 }
 
-                @include mq(320px){
+                @include mq(320px) {
                     width: 200px;
                 }
 
@@ -255,19 +256,19 @@
                     align-items: center;
                     padding: 0.3em;
 
-                    @include mq(1024px){
+                    @include mq(1024px) {
                         font-size: 16px;
                     }
         
-                    @include mq(768px){
+                    @include mq(768px) {
                         font-size: 14px;
                     }
 
-                    @include mq(480px){
+                    @include mq(480px) {
                         font-size: 12px;
                     }
     
-                    &:before{
+                    &:before {
                         font-family: 'Font Awesome 5 Free';
                         content: '\f00c';
                         display: block;
@@ -286,8 +287,8 @@
             padding-top: 2.5rem;
             padding-bottom: 0;
 
-            h2{
-                &:after{
+            h2 {
+                &:after {
                     content: '';
                     width: 100px;
                     height: 2px;
@@ -296,23 +297,23 @@
                     margin: 1rem auto;
                 }
             }
-            p{
+            p {
                 margin: 0 auto;
-                @include mq(1024px){
+                @include mq(1024px) {
                     font-size: 16px;
                     width: 90%;
                     padding-bottom: 1rem;
                 }
     
-                @include mq(768px){
+                @include mq(768px) {
                     font-size: 14px;
                 }
 
-                @include mq(480px){
+                @include mq(480px) {
                     font-size: 12px;
                 }
             }
-            input[type="email"]{
+            input[type="email"] {
                 margin-bottom: 0.5rem;
                 margin-right: 0.3rem;
                 border: none;
@@ -322,20 +323,20 @@
                 background-color: #fff;
                 color: #215AA0;
 
-                @include mq(1024px){
+                @include mq(1024px) {
                     padding: 0.6rem 6rem 0.6rem 0.6rem;
                 }
     
-                @include mq(768px){
+                @include mq(768px) {
                     padding: 0.5rem 3rem 0.5rem 0.5rem;
                 }
 
-                @include mq(480px){
+                @include mq(480px) {
                     padding: 0.3rem 1rem 0.3rem 0.3rem;
                     margin-bottom: 0;
                 }
             }
-            input[type="submit"]{
+            input[type="submit"] {
                 background-color: #fff;
                 color: #215AA0;
                 border-radius: 0.2em;
@@ -348,24 +349,24 @@
                 margin-bottom: 2rem;
                 transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
                 
-                @include mq(1024px){
+                @include mq(1024px) {
                     padding: 0.6rem 2.5rem;
                     margin-top: 1rem;
                     margin-bottom: 1.8rem;
                 }
     
-                @include mq(768px){
+                @include mq(768px) {
                     padding: 0.55rem 2.5rem;
                     margin-top: 1rem;
                     margin-bottom: 1.8rem;
                     font-size: 12px;
                 }
 
-                @include mq(480px){
+                @include mq(480px) {
                     padding: 0.35rem 0.8rem;
                 }
 
-                &:hover{
+                &:hover {
                     background-color: rgb(107, 107, 107);
                     color: #fff;
                 }

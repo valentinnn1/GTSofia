@@ -40,10 +40,7 @@
       .site-main ul li input {
         display: none; }
       .site-main ul li label {
-        /*display: block;
-                    position: relative;
-                    overflow: hidden;
-                    */
+        overflow: hidden;
         display: flex;
         background: #fff;
         position: relative;
@@ -74,10 +71,6 @@
           left: 0;
           right: 0;
           bottom: 0; }
-        .site-main ul li label:before {
-          display: block;
-          content: '';
-          /*padding-top: calc(50% - 1em);*/ }
         .site-main ul li label.close {
           display: none;
           font-size: 2em;
