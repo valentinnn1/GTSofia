@@ -103,7 +103,7 @@
                     padding-top: 3rem;
                 }
                 @include mq(320px) {
-                    padding-top: 2rem;
+                    padding-top: 1rem;
                 }
             }
             p {
@@ -131,7 +131,7 @@
 
                 @include mq(480px) {
                     font-size: 14px;
-                    width: 80%;
+                    width: 90%;
                 }
                 @include mq(320px) {
                     margin-bottom: 0.5rem;

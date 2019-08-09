@@ -6,7 +6,7 @@
 
 html {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif; }
+  font: 16px/1.5 'Roboto', sans-serif; }
 
 @media (max-width: 600px) {
   html {
@@ -115,7 +115,7 @@ html {
           padding-top: 3rem; } }
       @media screen and (max-width: 320px) {
         .site-header section h1 {
-          padding-top: 2rem; } }
+          padding-top: 1rem; } }
     .site-header section p {
       font-size: 20px;
       width: 35%;
@@ -138,7 +138,7 @@ html {
       @media screen and (max-width: 480px) {
         .site-header section p {
           font-size: 14px;
-          width: 80%; } }
+          width: 90%; } }
       @media screen and (max-width: 320px) {
         .site-header section p {
           margin-bottom: 0.5rem; } }

@@ -1,5 +1,14 @@
 .site-main {
-  color: #152f63; }
+  color: #152f63;
+  max-width: 70em;
+  margin: 0 auto; }
+  @media screen and (max-width: 1024px) {
+    .site-main {
+      max-width: 80em;
+      margin: 0 3.5rem; } }
+  @media screen and (max-width: 768px) {
+    .site-main {
+      margin: 0; } }
   .site-main h2 {
     text-align: center; }
     .site-main h2:after {
@@ -12,20 +21,19 @@
   .site-main section {
     border-bottom: 1px solid #bdbdbd;
     margin: 1rem auto;
-    width: 90%;
-    padding-bottom: 2rem;
-    font-size: 15px; }
+    padding-bottom: 2rem; }
     @media screen and (max-width: 1024px) {
       .site-main section {
-        font-size: 13px;
+        font-size: 14px;
         padding-bottom: 1.5rem; } }
     @media screen and (max-width: 768px) {
       .site-main section {
-        font-size: 11px;
-        padding-bottom: 1.2rem; } }
+        font-size: 12px;
+        padding-bottom: 1.2rem;
+        width: 90%; } }
     @media screen and (max-width: 480px) {
       .site-main section {
-        font-size: 10px;
+        font-size: 11px;
         padding-bottom: 0.7rem; } }
     .site-main section:last-of-type {
       border: none; }
@@ -39,36 +47,34 @@
           padding: 0.2rem; } }
     .site-main section .left {
       float: left;
-      margin: 0.5rem 1rem 0.5rem 0.5rem; }
+      margin: 2em; }
       @media screen and (max-width: 1024px) {
         .site-main section .left {
-          margin: 0.4rem 0.8rem 0.4rem 0.6rem; } }
+          margin: 1em; } }
       @media screen and (max-width: 768px) {
         .site-main section .left {
-          margin: 0.3rem 0.6rem 0.3rem 0.6rem; } }
+          margin: 0.6rem; } }
       @media screen and (max-width: 480px) {
         .site-main section .left {
-          margin: 0.2rem 0.5rem 0.2rem 0.5rem; } }
+          margin: 0.5rem; } }
     .site-main section .right {
       float: right;
-      margin: 0.5rem 0.5rem 0.5rem 1rem; }
+      margin: 2em; }
       @media screen and (max-width: 1024px) {
         .site-main section .right {
-          margin: 0.4rem 0.6rem 0.4rem 0.8rem; } }
+          margin: 1em; } }
       @media screen and (max-width: 768px) {
         .site-main section .right {
-          margin: 0.3rem 0.6rem 0.3rem 0.6rem; } }
+          margin: 0.7rem; } }
       @media screen and (max-width: 480px) {
         .site-main section .right {
-          margin: 0.2rem 0.5rem 0.2rem 0.5rem; } }
-    .site-main section img {
-      box-shadow: 0 0 1em #152f63; }
-      @media screen and (max-width: 768px) {
-        .site-main section img {
-          width: 150px; } }
-      @media screen and (max-width: 480px) {
-        .site-main section img {
-          width: 100px; } }
+          margin: 0.5rem; } }
+    @media screen and (max-width: 768px) {
+      .site-main section img {
+        width: 150px; } }
+    @media screen and (max-width: 480px) {
+      .site-main section img {
+        width: 100px; } }
   .site-main .metro img {
     width: 200px; }
     @media screen and (max-width: 768px) {

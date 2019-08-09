@@ -129,7 +129,7 @@
                         }
                         @at-root .site-main{
                             .trams .close {
-                                top: 4em; right: 8em;
+                                top: 7em; right: 8em;
                                 @include mq(1024px) {
                                     top: 2em; right: 4em;
                                 }
