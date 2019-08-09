@@ -30,6 +30,7 @@
             grid-gap: 1em;
             grid-auto-flow: dense;
             justify-items: center;
+            position: relative;
 
             @include mq(768px) {
                 grid-template-columns: repeat(8, 1fr);
@@ -102,12 +103,51 @@
                         align-items: center;
                         justify-content: center;
                         transition: transform 0.3s ease-in-out;
-                        position: fixed;
-                        top: 1em; right: 1em;
+                        /*position: fixed;*/ position: absolute;
+                        top: 12em; right: 8em;
                         background: #000;
                         color: #fff;
                         z-index: 300;
                         cursor: pointer;
+
+                        @at-root .site-main{
+                            .trolleybuses .close {
+                                top: -2em; right: 8em;
+
+                                @include mq(1024px) {
+                                    top: -4em; right: 4em;
+                                }
+                    
+                                @include mq(768px) {
+                                    top: -2em; right: 4em;
+                                }
+                
+                                @include mq(480px) {
+                                    top: 10em; right: 2em;
+                                }
+                            }
+                        }
+                        @at-root .site-main{
+                            .trams .close {
+                                top: 4em; right: 8em;
+                                @include mq(1024px) {
+                                    top: 2em; right: 4em;
+                                }
+                    
+                                @include mq(768px) {
+                                    top: 12em; right: 4em;
+                                }
+                                @include mq(480px) {
+                                    top: 10em; right: 2em;
+                                }
+                            }
+                        }
+                        @at-root .site-main{
+                            .metro .close {
+                                top: -7em; right: 8em;
+                                
+                            }
+                        }
         
                         &:hover {
                             transform: scale(1.1);
@@ -129,7 +169,8 @@
         
                 a {
                     display: none;
-                    position: fixed;
+                    /*position: fixed;*/
+                    position: absolute;
                     top: 50%; left: 50%;
                     transform: translate(-50%, -50%);
                     width: 60vw;
