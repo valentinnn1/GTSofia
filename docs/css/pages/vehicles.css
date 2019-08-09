@@ -15,8 +15,8 @@
     padding: 1.5rem; }
   .site-main ul {
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-gap: 1em;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 2em;
     grid-auto-flow: dense;
     justify-items: center;
     position: relative; }
@@ -28,7 +28,6 @@
       outline: 4px solid #152f63;
       grid-column: span 3;
       display: flex;
-      width: 100%;
       box-shadow: 0 0 0.6em 0.3em #152f63; }
       @media screen and (max-width: 768px) {
         .site-main ul li {
@@ -81,16 +80,15 @@
           align-items: center;
           justify-content: center;
           transition: transform 0.3s ease-in-out;
-          /*position: fixed;*/
           position: absolute;
-          top: 12em;
+          top: 4em;
           right: 8em;
           background: #000;
           color: #fff;
           z-index: 300;
           cursor: pointer; }
           .site-main .trolleybuses .close {
-            top: -2em;
+            top: -8em;
             right: 8em; }
             @media screen and (max-width: 1024px) {
               .site-main .trolleybuses .close {
@@ -105,7 +103,7 @@
                 top: 10em;
                 right: 2em; } }
           .site-main .trams .close {
-            top: 7em;
+            top: 0;
             right: 8em; }
             @media screen and (max-width: 1024px) {
               .site-main .trams .close {
@@ -120,7 +118,7 @@
                 top: 10em;
                 right: 2em; } }
           .site-main .metro .close {
-            top: -7em;
+            top: -8em;
             right: 8em; }
           .site-main ul li label.close:hover {
             transform: scale(1.1);
@@ -131,7 +129,6 @@
         display: flex; }
       .site-main ul li a {
         display: none;
-        /*position: fixed;*/
         position: absolute;
         top: 50%;
         left: 50%;

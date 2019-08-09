@@ -26,8 +26,8 @@
         }
         ul {
             display: grid;
-            grid-template-columns: repeat(9, 1fr);
-            grid-gap: 1em;
+            grid-template-columns: repeat(12, 1fr);
+            grid-gap: 2em;
             grid-auto-flow: dense;
             justify-items: center;
             position: relative;
@@ -41,7 +41,6 @@
                 outline: 4px solid rgb(21, 47, 99);
                 grid-column: span 3;
                 display: flex;
-                width: 100%;
                 box-shadow: 0 0 0.6em 0.3em rgb(21, 47, 99);
 
                 @include mq(768px) {
@@ -103,8 +102,8 @@
                         align-items: center;
                         justify-content: center;
                         transition: transform 0.3s ease-in-out;
-                        /*position: fixed;*/ position: absolute;
-                        top: 12em; right: 8em;
+                        position: absolute;
+                        top: 4em; right: 8em;
                         background: #000;
                         color: #fff;
                         z-index: 300;
@@ -112,7 +111,7 @@
 
                         @at-root .site-main{
                             .trolleybuses .close {
-                                top: -2em; right: 8em;
+                                top: -8em; right: 8em;
 
                                 @include mq(1024px) {
                                     top: -4em; right: 4em;
@@ -129,7 +128,7 @@
                         }
                         @at-root .site-main{
                             .trams .close {
-                                top: 7em; right: 8em;
+                                top: 0; right: 8em;
                                 @include mq(1024px) {
                                     top: 2em; right: 4em;
                                 }
@@ -144,8 +143,7 @@
                         }
                         @at-root .site-main{
                             .metro .close {
-                                top: -7em; right: 8em;
-                                
+                                top: -8em; right: 8em;
                             }
                         }
         
@@ -169,7 +167,6 @@
         
                 a {
                     display: none;
-                    /*position: fixed;*/
                     position: absolute;
                     top: 50%; left: 50%;
                     transform: translate(-50%, -50%);
