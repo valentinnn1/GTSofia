@@ -115,7 +115,7 @@ html {
           padding-top: 3rem; } }
       @media screen and (max-width: 320px) {
         .site-header section h1 {
-          padding-top: 1rem; } }
+          padding-top: 0; } }
     .site-header section p {
       font-size: 20px;
       width: 35%;

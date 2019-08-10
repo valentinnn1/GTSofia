@@ -20,6 +20,9 @@
     grid-auto-flow: dense;
     justify-items: center;
     position: relative; }
+    @media screen and (max-width: 1024px) {
+      .site-main ul {
+        grid-template-columns: repeat(9, 1fr); } }
     @media screen and (max-width: 768px) {
       .site-main ul {
         grid-template-columns: repeat(8, 1fr); } }
@@ -29,10 +32,13 @@
       grid-column: span 3;
       display: flex;
       box-shadow: 0 0 0.6em 0.3em #152f63; }
+      @media screen and (max-width: 1024px) {
+        .site-main ul li {
+          grid-column: span 3; } }
       @media screen and (max-width: 768px) {
         .site-main ul li {
           grid-column: span 4; } }
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 640px) {
         .site-main ul li {
           grid-column: span 8; } }
       .site-main ul li:hover .img-description {
@@ -42,13 +48,16 @@
       .site-main ul li label {
         overflow: hidden;
         display: flex;
-        background: #fff;
+        background: #001235;
         position: relative;
         width: 100%;
         align-items: center;
         justify-content: center;
         padding: 0.5em;
         cursor: pointer; }
+        @media screen and (max-width: 768px) {
+          .site-main ul li label {
+            pointer-events: none; } }
         .site-main ul li label img {
           display: block;
           height: auto;
@@ -81,52 +90,53 @@
           justify-content: center;
           transition: transform 0.3s ease-in-out;
           position: absolute;
-          top: 4em;
+          top: 2em;
           right: 8em;
           background: #000;
           color: #fff;
           z-index: 300;
           cursor: pointer; }
+          @media screen and (max-width: 1024px) {
+            .site-main ul li label.close {
+              top: 4em;
+              right: 4em; } }
+          @media screen and (max-width: 768px) {
+            .site-main ul li label.close {
+              display: none; } }
           .site-main .trolleybuses .close {
             top: -8em;
             right: 8em; }
             @media screen and (max-width: 1024px) {
               .site-main .trolleybuses .close {
-                top: -4em;
+                top: -5em;
                 right: 4em; } }
-            @media screen and (max-width: 768px) {
-              .site-main .trolleybuses .close {
-                top: -2em;
-                right: 4em; } }
-            @media screen and (max-width: 480px) {
-              .site-main .trolleybuses .close {
-                top: 10em;
-                right: 2em; } }
           .site-main .trams .close {
             top: 0;
             right: 8em; }
             @media screen and (max-width: 1024px) {
               .site-main .trams .close {
-                top: 2em;
+                top: 1em;
                 right: 4em; } }
-            @media screen and (max-width: 768px) {
-              .site-main .trams .close {
-                top: 12em;
-                right: 4em; } }
-            @media screen and (max-width: 480px) {
-              .site-main .trams .close {
-                top: 10em;
-                right: 2em; } }
           .site-main .metro .close {
             top: -8em;
             right: 8em; }
+            @media screen and (max-width: 1024px) {
+              .site-main .metro .close {
+                top: -8em;
+                right: 4em; } }
           .site-main ul li label.close:hover {
             transform: scale(1.1);
             outline: 0.2em solid #fff; }
       .site-main ul li input:checked ~ label.close {
         display: flex; }
+        @media screen and (max-width: 768px) {
+          .site-main ul li input:checked ~ label.close {
+            display: none; } }
       .site-main ul li input:checked ~ a {
         display: flex; }
+        @media screen and (max-width: 768px) {
+          .site-main ul li input:checked ~ a {
+            display: none; } }
       .site-main ul li a {
         display: none;
         position: absolute;
@@ -147,20 +157,15 @@
           .site-main ul li a {
             width: 60vw;
             height: 50vh; } }
-        @media screen and (max-width: 640px) {
-          .site-main ul li a {
-            width: 70vw;
-            height: 40vh; } }
-        @media screen and (max-width: 480px) {
-          .site-main ul li a {
-            width: 80vw;
-            height: 30vh; } }
         .site-main ul li a span {
           position: absolute;
           top: 0;
           left: 0;
           right: 0;
           bottom: 0; }
+          @media screen and (max-width: 768px) {
+            .site-main ul li a span {
+              display: none; } }
         .site-main ul li a img {
           width: 100%;
           height: auto;
@@ -168,3 +173,6 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%); }
+          @media screen and (max-width: 768px) {
+            .site-main ul li a img {
+              display: none; } }

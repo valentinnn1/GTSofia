@@ -32,6 +32,10 @@
             justify-items: center;
             position: relative;
 
+            @include mq(1024px) {
+                grid-template-columns: repeat(9, 1fr);
+            }
+
             @include mq(768px) {
                 grid-template-columns: repeat(8, 1fr);
             }
@@ -43,11 +47,15 @@
                 display: flex;
                 box-shadow: 0 0 0.6em 0.3em rgb(21, 47, 99);
 
+                @include mq(1024px) {
+                    grid-column: span 3;
+                }
+                
                 @include mq(768px) {
                     grid-column: span 4;
                 }
     
-                @include mq(480px) {
+                @include mq(640px) {
                     grid-column: span 8;
                 }
 
@@ -61,13 +69,17 @@
                 label {
                     overflow: hidden;
                     display: flex;
-                    background: #fff;
+                    background: rgb(0, 18, 53);
                     position: relative;
                     width: 100%;
                     align-items: center;
                     justify-content: center;
                     padding: 0.5em;
                     cursor: pointer;
+
+                    @include mq(768px) {
+                        pointer-events: none;
+                    }
 
                     img {
                         display: block;
@@ -103,7 +115,16 @@
                         justify-content: center;
                         transition: transform 0.3s ease-in-out;
                         position: absolute;
-                        top: 4em; right: 8em;
+                        top: 2em; right: 8em;
+
+                        @include mq(1024px) {
+                            top: 4em; right: 4em;
+                        }
+
+                        @include mq(768px) {
+                            display: none;
+                        }
+
                         background: #000;
                         color: #fff;
                         z-index: 300;
@@ -114,36 +135,25 @@
                                 top: -8em; right: 8em;
 
                                 @include mq(1024px) {
-                                    top: -4em; right: 4em;
-                                }
-                    
-                                @include mq(768px) {
-                                    top: -2em; right: 4em;
+                                    top: -5em; right: 4em;
                                 }
                 
-                                @include mq(480px) {
-                                    top: 10em; right: 2em;
-                                }
                             }
                         }
                         @at-root .site-main{
                             .trams .close {
                                 top: 0; right: 8em;
                                 @include mq(1024px) {
-                                    top: 2em; right: 4em;
-                                }
-                    
-                                @include mq(768px) {
-                                    top: 12em; right: 4em;
-                                }
-                                @include mq(480px) {
-                                    top: 10em; right: 2em;
+                                    top: 1em; right: 4em;
                                 }
                             }
                         }
                         @at-root .site-main{
                             .metro .close {
                                 top: -8em; right: 8em;
+                                @include mq(1024px) {
+                                    top: -8em; right: 4em;
+                                }
                             }
                         }
         
@@ -158,11 +168,17 @@
                     
                     &.close {
                         display: flex;
+                        @include mq(768px) {
+                            display: none;
+                        }
                     }
                 }
         
                 input:checked ~ a {
                     display: flex;
+                    @include mq(768px) {
+                        display: none;
+                    }
                 }
         
                 a {
@@ -186,23 +202,19 @@
                         width: 60vw;
                         height: 50vh;
                     }
-
-                    @include mq(640px) {
-                        width: 70vw;
-                        height: 40vh;
-                    }
-    
-                    @include mq(480px) {
-                        width: 80vw;
-                        height: 30vh;
-                    }
         
                     span {
+                        @include mq(768px) {
+                            display: none;
+                        }
                         position: absolute;
                         top: 0; left: 0; right: 0; bottom: 0;
                     }
         
                     img {
+                        @include mq(768px) {
+                            display: none;
+                        }
                         width: 100%;
                         height: auto;
                         position: absolute;
