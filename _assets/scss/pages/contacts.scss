@@ -1,12 +1,8 @@
-@mixin mq($width) {
-    @media screen and (max-width: $width){
-        @content;
-    }
-}
+@import '../mixins';
 
 .site {
     &-main {
-        color: rgb(21, 47, 99);
+        color: var(--color-darkblue);
         text-align: justify;
 
         h2 {
@@ -17,7 +13,7 @@
                 content: '';
                 width: 100px;
                 height: 2px;
-                background-color: rgb(21, 47, 99);
+                background-color: var(--color-darkblue);
                 display: block;
                 margin: 1rem auto;
             }
@@ -63,29 +59,29 @@
                     flex: 0 0 15%;
                     
                     a {
-                        color: rgb(21, 47, 99);
+                        color: var(--color-darkblue);
 
                         &:hover {
-                            color: rgb(107, 107, 107);
+                            color: var(--color-grey);
                         }
                     }
                 }
             }
-            @include mq(1024px) {
-                font-size: 18px;
+            @include bp(laptop) {
+                font-size: var(--font-size-larger);
             }
     
-            @include mq(768px) {
-                font-size: 16px;
+            @include bp(tablet) {
+                font-size: var(--font-size-default);
                 .first-part {
                     width: 260px;
                     padding-right: 0;
                 }
             }
             
-            @include mq(480px) {
+            @include bp(phone) {
                 display: block;
-                font-size: 14px;
+                font-size: var(--font-size-smaller);
                 padding-bottom: 0;
                 .first-part {
                     width: 100%;
@@ -115,7 +111,7 @@
             text-align: center;
             margin-bottom: 2rem;
 
-            @include mq(768px) {
+            @include bp(tablet) {
                 iframe{
                     width: 90%;
                 }

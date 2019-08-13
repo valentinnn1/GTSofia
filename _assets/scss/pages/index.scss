@@ -1,13 +1,9 @@
-@mixin mq($width) {
-    @media screen and (max-width: $width){
-        @content;
-    }
-}
+@import '../mixins';
 
 .site {
     &-main {
         .news-section {
-            color: rgb(21, 47, 99);
+            color: var(--color-darkblue);
             padding-top: 1rem;
 
             &:after {
@@ -26,7 +22,7 @@
                     content: '';
                     width: 100px;
                     height: 2px;
-                    background-color: rgb(21, 47, 99);
+                    background-color: var(--color-darkblue);
                     display: block;
                     margin: 1rem auto;
                 }
@@ -34,7 +30,7 @@
             .news {
                 display: flex;
                 justify-content: space-around;  
-                @include mq(768px) {
+                @include bp(tablet) {
                     flex-direction: column;
                 }     
                 li {
@@ -42,7 +38,7 @@
                     padding-bottom: 2rem;
                     list-style: none;
 
-                    @include mq(768px) {
+                    @include bp(tablet) {
                         border-bottom: 1px solid rgb(189, 189, 189);
                         margin: 0.2rem auto;
                         width: 80%;
@@ -50,11 +46,11 @@
                         text-align: center;
 
                         h3 {
-                            @include mq(1024px) {
-                                font-size: 16px;
+                            @include bp(laptop) {
+                                font-size: var(--font-size-default);
                             }
                     
-                            @include mq(768px) {
+                            @include bp(tablet) {
                                 font-size: 15px;
                             }
                         }
@@ -66,23 +62,23 @@
                         color: grey;
                         padding: 0.4rem 0;
 
-                        @include mq(1024px) {
-                            font-size: 12px;
+                        @include bp(laptop) {
+                            font-size: var(--font-size-supersmall);
                             padding: 0.3rem 0;
                         }
                 
-                        @include mq(768px) {
+                        @include bp(tablet) {
                             font-size: 10px;
                             padding: 0.2rem 0;
                         }
                     }
                     .news-description {
-                        @include mq(1024px) {
-                            font-size: 14px;
+                        @include bp(laptop) {
+                            font-size: var(--font-size-smaller);
                         }
                 
-                        @include mq(768px) {
-                            font-size: 12px;
+                        @include bp(tablet) {
+                            font-size: var(--font-size-supersmall);
                         }
                     }
                 }
@@ -93,18 +89,18 @@
                 justify-content: center;
                 margin-bottom: 1rem;
 
-                @include mq(1024px) {
-                    font-size: 14px;
+                @include bp(laptop) {
+                    font-size: var(--font-size-smaller);
                 }
         
-                @include mq(768px) {
-                    font-size: 12px;
+                @include bp(tablet) {
+                    font-size: var(--font-size-supersmall);
                 }
 
                 a {
                     text-decoration: none;
                     cursor: pointer;
-                    color: rgb(21, 47, 99);
+                    color: var(--color-darkblue);
 
                     i {
                         padding-left: 0.5rem;
@@ -117,7 +113,7 @@
         }
         .picofthemonth-section {
             h2 {
-                color: rgb(21, 47, 99);
+                color: var(--color-darkblue);
                 text-align: center;
             }
             .container {
@@ -126,19 +122,19 @@
                 position: relative;
                 width: 900px;
 
-                @include mq(1024px) {
+                @include bp(laptop) {
                     width: 600px;
                 }
         
-                @include mq(768px) {
+                @include bp(tablet) {
                     width: 400px;
                 }
 
-                @include mq(640px) {
+                @include bp(large-phone) {
                     width: 300px;
                 }
 
-                @include mq(480px) {
+                @include bp(phone) {
                     width: 200px;
                 }
                 
@@ -148,19 +144,19 @@
                     height: auto;
                     width: 900px;
 
-                    @include mq(1024px) {
+                    @include bp(laptop) {
                         width: 600px;
                     }
             
-                    @include mq(768px) {
+                    @include bp(tablet) {
                         width: 400px;
                     }
     
-                    @include mq(640px) {
+                    @include bp(large-phone) {
                         width: 300px;
                     }
     
-                    @include mq(480px) {
+                    @include bp(phone) {
                         width: 200px;
                     }
                 }
@@ -173,19 +169,19 @@
                     width: 0;
                     height: 15%;
                     transition: width 0.5s ease-in;
-                    @include mq(1024px) {
+                    @include bp(laptop) {
                         height: 25%;
                     }
             
-                    @include mq(768px) {
+                    @include bp(tablet) {
                         height: 35%;
                     }
 
-                    @include mq(640px) {
+                    @include bp(large-phone) {
                         height: 40%;
                     }
 
-                    @include mq(480px) {
+                    @include bp(phone) {
                         height: 45%;
                     }
 
@@ -197,19 +193,19 @@
                         top: 50%;
                         left: 50%;                      
                         transform: translate(-50%, -50%);
-                        @include mq(1024px) {
-                            font-size: 12px;
+                        @include bp(laptop) {
+                            font-size: var(--font-size-supersmall);
                         }
                 
-                        @include mq(768px) {
+                        @include bp(tablet) {
                             font-size: 11px;
                         }
     
-                        @include mq(640px) {
+                        @include bp(large-phone) {
                             font-size: 10px;
                         }
     
-                        @include mq(480px) {
+                        @include bp(phone) {
                             font-size: 9px;
                         }
                     }
@@ -238,15 +234,15 @@
                 width: 350px;
                 margin: 0 auto;
         
-                @include mq(768px) {
+                @include bp(tablet) {
                     width: 300px;
                 }
 
-                @include mq(480px) {
+                @include bp(phone) {
                     width: 250px;
                 }
 
-                @include mq(320px) {
+                @include bp(small-phone) {
                     width: 200px;
                 }
 
@@ -256,16 +252,16 @@
                     align-items: center;
                     padding: 0.3em;
 
-                    @include mq(1024px) {
-                        font-size: 16px;
+                    @include bp(laptop) {
+                        font-size: var(--font-size-default);
                     }
         
-                    @include mq(768px) {
-                        font-size: 14px;
+                    @include bp(tablet) {
+                        font-size: var(--font-size-smaller);
                     }
 
-                    @include mq(480px) {
-                        font-size: 12px;
+                    @include bp(phone) {
+                        font-size: var(--font-size-supersmall);
                     }
     
                     &:before {
@@ -282,7 +278,7 @@
         }
         .subscribe-section {
             text-align: center;
-            background: rgb(21, 47, 99);
+            background: var(--color-darkblue);
             color: #fff;
             padding-top: 2.5rem;
             padding-bottom: 0;
@@ -299,18 +295,18 @@
             }
             p {
                 margin: 0 auto;
-                @include mq(1024px) {
-                    font-size: 16px;
+                @include bp(laptop) {
+                    font-size: var(--font-size-default);
                     width: 90%;
                     padding-bottom: 1rem;
                 }
     
-                @include mq(768px) {
-                    font-size: 14px;
+                @include bp(tablet) {
+                    font-size: var(--font-size-smaller);
                 }
 
-                @include mq(480px) {
-                    font-size: 12px;
+                @include bp(phone) {
+                    font-size: var(--font-size-supersmall);
                 }
             }
             input[type="email"] {
@@ -323,15 +319,15 @@
                 background-color: #fff;
                 color: #215AA0;
 
-                @include mq(1024px) {
+                @include bp(laptop) {
                     padding: 0.6rem 6rem 0.6rem 0.6rem;
                 }
     
-                @include mq(768px) {
+                @include bp(tablet) {
                     padding: 0.5rem 3rem 0.5rem 0.5rem;
                 }
 
-                @include mq(480px) {
+                @include bp(phone) {
                     padding: 0.3rem 1rem 0.3rem 0.3rem;
                     margin-bottom: 0;
                 }
@@ -349,25 +345,23 @@
                 margin-bottom: 2rem;
                 transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
                 
-                @include mq(1024px) {
+                @include bp(laptop) {
                     padding: 0.6rem 2.5rem;
                     margin-top: 1rem;
                     margin-bottom: 1.8rem;
                 }
     
-                @include mq(768px) {
+                @include bp(tablet) {
                     padding: 0.55rem 2.5rem;
-                    margin-top: 1rem;
-                    margin-bottom: 1.8rem;
-                    font-size: 12px;
+                    font-size: var(--font-size-supersmall);
                 }
 
-                @include mq(480px) {
+                @include bp(phone) {
                     padding: 0.35rem 0.8rem;
                 }
 
                 &:hover {
-                    background-color: rgb(107, 107, 107);
+                    background-color: var(--color-grey);
                     color: #fff;
                 }
             }

@@ -1,13 +1,13 @@
 .site-main {
   margin: 1rem;
-  color: #152f63; }
+  color: var(--color-darkblue); }
   .site-main h2 {
     text-align: center; }
     .site-main h2:after {
       content: '';
       width: 100px;
       height: 2px;
-      background-color: #152f63;
+      background-color: var(--color-darkblue);
       display: block;
       margin: 1rem auto; }
   .site-main .vehicle-type {
@@ -20,25 +20,25 @@
     grid-auto-flow: dense;
     justify-items: center;
     position: relative; }
-    @media screen and (max-width: 1024px) {
+    @media (max-width: 1024px) {
       .site-main ul {
         grid-template-columns: repeat(9, 1fr); } }
-    @media screen and (max-width: 768px) {
+    @media (max-width: 768px) {
       .site-main ul {
         grid-template-columns: repeat(8, 1fr); } }
     .site-main ul li {
       list-style: none;
-      outline: 4px solid #152f63;
+      outline: 4px solid var(--color-darkblue);
       grid-column: span 3;
       display: flex;
-      box-shadow: 0 0 0.6em 0.3em #152f63; }
-      @media screen and (max-width: 1024px) {
+      box-shadow: 0 0 0.6em 0.3em var(--color-darkblue); }
+      @media (max-width: 1024px) {
         .site-main ul li {
           grid-column: span 3; } }
-      @media screen and (max-width: 768px) {
+      @media (max-width: 768px) {
         .site-main ul li {
           grid-column: span 4; } }
-      @media screen and (max-width: 640px) {
+      @media (max-width: 640px) {
         .site-main ul li {
           grid-column: span 8; } }
       .site-main ul li:hover .img-description {
@@ -55,7 +55,7 @@
         justify-content: center;
         padding: 0.5em;
         cursor: pointer; }
-        @media screen and (max-width: 768px) {
+        @media (max-width: 768px) {
           .site-main ul li label {
             pointer-events: none; } }
         .site-main ul li label img {
@@ -96,31 +96,31 @@
           color: #fff;
           z-index: 300;
           cursor: pointer; }
-          @media screen and (max-width: 1024px) {
+          @media (max-width: 1024px) {
             .site-main ul li label.close {
               top: 4em;
               right: 4em; } }
-          @media screen and (max-width: 768px) {
+          @media (max-width: 768px) {
             .site-main ul li label.close {
               display: none; } }
           .site-main .trolleybuses .close {
             top: -8em;
             right: 8em; }
-            @media screen and (max-width: 1024px) {
+            @media (max-width: 1024px) {
               .site-main .trolleybuses .close {
                 top: -5em;
                 right: 4em; } }
           .site-main .trams .close {
             top: 0;
             right: 8em; }
-            @media screen and (max-width: 1024px) {
+            @media (max-width: 1024px) {
               .site-main .trams .close {
                 top: 1em;
                 right: 4em; } }
           .site-main .metro .close {
             top: -8em;
             right: 8em; }
-            @media screen and (max-width: 1024px) {
+            @media (max-width: 1024px) {
               .site-main .metro .close {
                 top: -8em;
                 right: 4em; } }
@@ -129,12 +129,12 @@
             outline: 0.2em solid #fff; }
       .site-main ul li input:checked ~ label.close {
         display: flex; }
-        @media screen and (max-width: 768px) {
+        @media (max-width: 768px) {
           .site-main ul li input:checked ~ label.close {
             display: none; } }
       .site-main ul li input:checked ~ a {
         display: flex; }
-        @media screen and (max-width: 768px) {
+        @media (max-width: 768px) {
           .site-main ul li input:checked ~ a {
             display: none; } }
       .site-main ul li a {
@@ -149,11 +149,11 @@
         z-index: 100;
         box-shadow: 0 0 100vw 100vw rgba(0, 0, 0, 0.9);
         background: rgba(0, 0, 0, 0.9); }
-        @media screen and (max-width: 1024px) {
+        @media (max-width: 1024px) {
           .site-main ul li a {
             width: 70vw;
             height: 70vh; } }
-        @media screen and (max-width: 768px) {
+        @media (max-width: 768px) {
           .site-main ul li a {
             width: 60vw;
             height: 50vh; } }
@@ -163,7 +163,7 @@
           left: 0;
           right: 0;
           bottom: 0; }
-          @media screen and (max-width: 768px) {
+          @media (max-width: 768px) {
             .site-main ul li a span {
               display: none; } }
         .site-main ul li a img {
@@ -173,6 +173,6 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%); }
-          @media screen and (max-width: 768px) {
+          @media (max-width: 768px) {
             .site-main ul li a img {
               display: none; } }

@@ -1,20 +1,17 @@
-@mixin mq($width) {
-    @media screen and (max-width: $width){
-        @content;
-    }
-}
+@import '../mixins';
 
 .site {
     &-main {
-        color: rgb(21, 47, 99);
+        color: var(--color-darkblue);
         max-width: 70em;
         margin: 0 auto;
-        @include mq(1024px) {
+
+        @include bp(laptop) {
             max-width: 80em;
             margin: 0 3.5rem;
         }
 
-        @include mq(768px) {
+        @include bp(tablet) {
             margin: 0;
         }
 
@@ -25,7 +22,7 @@
                 content: '';
                 width: 100px;
                 height: 2px;
-                background-color: rgb(21, 47, 99);
+                background-color: var(--color-darkblue);
                 display: block;
                 margin: 1rem auto;
             }
@@ -35,18 +32,18 @@
             margin: 1rem auto;
             padding-bottom: 2rem;
 
-            @include mq(1024px) {
-                font-size: 14px;
+            @include bp(laptop) {
+                font-size: var(--font-size-smaller);
                 padding-bottom: 1.5rem;
             }
     
-            @include mq(768px) {
-                font-size: 12px;
+            @include bp(tablet) {
+                font-size: var(--font-size-supersmall);
                 padding-bottom: 1.2rem;
                 width: 90%;
             }
     
-            @include mq(480px) {
+            @include bp(phone) {
                 font-size: 11px;
                 padding-bottom: 0.7rem;
             }
@@ -57,10 +54,10 @@
 
             p {
                 padding: 0.5rem;
-                @include mq(768px) {
+                @include bp(tablet) {
                     padding: 0.3rem;
                 }
-                @include mq(480px) {
+                @include bp(phone) {
                     padding: 0.2rem;
                 }
             }
@@ -69,15 +66,15 @@
                 float: left;
                 margin: 2em;
 
-                @include mq(1024px) {
+                @include bp(laptop) {
                     margin: 1em;
                 }
         
-                @include mq(768px) {
+                @include bp(tablet) {
                     margin: 0.6rem;
                 }
         
-                @include mq(480px) {
+                @include bp(phone) {
                     margin: 0.5rem;
                 }
             }
@@ -86,34 +83,34 @@
                 float: right;
                 margin: 2em;
 
-                @include mq(1024px) {
+                @include bp(laptop) {
                     margin: 1em;
                 }
         
-                @include mq(768px) {
+                @include bp(tablet) {
                     margin: 0.7rem;
                 }
         
-                @include mq(480px) {
+                @include bp(phone) {
                     margin: 0.5rem;
                 }
             }
 
             img {
-                @include mq(768px) {
+                @include bp(tablet) {
                     width: 150px;
                 }
-                @include mq(480px) {
+                @include bp(phone) {
                     width: 100px;
                 }
             } 
         }
         .metro img {
             width: 200px;
-            @include mq(768px) {
+            @include bp(tablet) {
                 width: 150px;
             }
-            @include mq(480px) {
+            @include bp(phone) {
                 width: 100px;
             }
         }

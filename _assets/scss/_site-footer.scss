@@ -1,6 +1,6 @@
 .site{
     &-footer {
-        background: rgb(21, 47, 99);
+        background: var(--color-darkblue);
         text-align: center;
         color: white;
         padding: 1em 0;
@@ -8,16 +8,16 @@
             color: white;
             text-decoration: none;
         }
-        @include mq(1024px) {
-            font-size: 16px;
+        @include bp(laptop) {
+            font-size: var(--font-size-default);
         }
 
-        @include mq(768px) {
-            font-size: 14px;
+        @include bp(tablet) {
+            font-size: var(--font-size-smaller);
         }
 
-        @include mq(480px) {
-            font-size: 12px;
+        @include bp(phone) {
+            font-size: var(--font-size-supersmall);
         }
     }
 

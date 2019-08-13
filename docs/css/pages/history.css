@@ -1,12 +1,12 @@
 .site-main {
-  color: #152f63;
+  color: var(--color-darkblue);
   max-width: 70em;
   margin: 0 auto; }
-  @media screen and (max-width: 1024px) {
+  @media (max-width: 1024px) {
     .site-main {
       max-width: 80em;
       margin: 0 3.5rem; } }
-  @media screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     .site-main {
       margin: 0; } }
   .site-main h2 {
@@ -15,23 +15,23 @@
       content: '';
       width: 100px;
       height: 2px;
-      background-color: #152f63;
+      background-color: var(--color-darkblue);
       display: block;
       margin: 1rem auto; }
   .site-main section {
     border-bottom: 1px solid #bdbdbd;
     margin: 1rem auto;
     padding-bottom: 2rem; }
-    @media screen and (max-width: 1024px) {
+    @media (max-width: 1024px) {
       .site-main section {
-        font-size: 14px;
+        font-size: var(--font-size-smaller);
         padding-bottom: 1.5rem; } }
-    @media screen and (max-width: 768px) {
+    @media (max-width: 768px) {
       .site-main section {
-        font-size: 12px;
+        font-size: var(--font-size-supersmall);
         padding-bottom: 1.2rem;
         width: 90%; } }
-    @media screen and (max-width: 480px) {
+    @media (max-width: 480px) {
       .site-main section {
         font-size: 11px;
         padding-bottom: 0.7rem; } }
@@ -39,47 +39,47 @@
       border: none; }
     .site-main section p {
       padding: 0.5rem; }
-      @media screen and (max-width: 768px) {
+      @media (max-width: 768px) {
         .site-main section p {
           padding: 0.3rem; } }
-      @media screen and (max-width: 480px) {
+      @media (max-width: 480px) {
         .site-main section p {
           padding: 0.2rem; } }
     .site-main section .left {
       float: left;
       margin: 2em; }
-      @media screen and (max-width: 1024px) {
+      @media (max-width: 1024px) {
         .site-main section .left {
           margin: 1em; } }
-      @media screen and (max-width: 768px) {
+      @media (max-width: 768px) {
         .site-main section .left {
           margin: 0.6rem; } }
-      @media screen and (max-width: 480px) {
+      @media (max-width: 480px) {
         .site-main section .left {
           margin: 0.5rem; } }
     .site-main section .right {
       float: right;
       margin: 2em; }
-      @media screen and (max-width: 1024px) {
+      @media (max-width: 1024px) {
         .site-main section .right {
           margin: 1em; } }
-      @media screen and (max-width: 768px) {
+      @media (max-width: 768px) {
         .site-main section .right {
           margin: 0.7rem; } }
-      @media screen and (max-width: 480px) {
+      @media (max-width: 480px) {
         .site-main section .right {
           margin: 0.5rem; } }
-    @media screen and (max-width: 768px) {
+    @media (max-width: 768px) {
       .site-main section img {
         width: 150px; } }
-    @media screen and (max-width: 480px) {
+    @media (max-width: 480px) {
       .site-main section img {
         width: 100px; } }
   .site-main .metro img {
     width: 200px; }
-    @media screen and (max-width: 768px) {
+    @media (max-width: 768px) {
       .site-main .metro img {
         width: 150px; } }
-    @media screen and (max-width: 480px) {
+    @media (max-width: 480px) {
       .site-main .metro img {
         width: 100px; } }

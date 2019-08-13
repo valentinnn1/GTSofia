@@ -1,5 +1,5 @@
 .site-main .news-section {
-  color: #152f63;
+  color: var(--color-darkblue);
   padding-top: 1rem; }
   .site-main .news-section:after {
     content: '';
@@ -14,74 +14,74 @@
       content: '';
       width: 100px;
       height: 2px;
-      background-color: #152f63;
+      background-color: var(--color-darkblue);
       display: block;
       margin: 1rem auto; }
   .site-main .news-section .news {
     display: flex;
     justify-content: space-around; }
-    @media screen and (max-width: 768px) {
+    @media (max-width: 768px) {
       .site-main .news-section .news {
         flex-direction: column; } }
     .site-main .news-section .news li {
       flex: 0 0 30%;
       padding-bottom: 2rem;
       list-style: none; }
-      @media screen and (max-width: 768px) {
+      @media (max-width: 768px) {
         .site-main .news-section .news li {
           border-bottom: 1px solid #bdbdbd;
           margin: 0.2rem auto;
           width: 80%;
           padding-bottom: 0.5rem;
           text-align: center; } }
-  @media screen and (max-width: 768px) and (max-width: 1024px) {
+  @media (max-width: 768px) and (max-width: 1024px) {
     .site-main .news-section .news li h3 {
-      font-size: 16px; } }
-  @media screen and (max-width: 768px) and (max-width: 768px) {
+      font-size: var(--font-size-default); } }
+  @media (max-width: 768px) and (max-width: 768px) {
     .site-main .news-section .news li h3 {
       font-size: 15px; } }
-      @media screen and (max-width: 768px) {
+      @media (max-width: 768px) {
           .site-main .news-section .news li:last-of-type {
             border: none; } }
       .site-main .news-section .news li .date {
         color: grey;
         padding: 0.4rem 0; }
-        @media screen and (max-width: 1024px) {
+        @media (max-width: 1024px) {
           .site-main .news-section .news li .date {
-            font-size: 12px;
+            font-size: var(--font-size-supersmall);
             padding: 0.3rem 0; } }
-        @media screen and (max-width: 768px) {
+        @media (max-width: 768px) {
           .site-main .news-section .news li .date {
             font-size: 10px;
             padding: 0.2rem 0; } }
-      @media screen and (max-width: 1024px) {
+      @media (max-width: 1024px) {
         .site-main .news-section .news li .news-description {
-          font-size: 14px; } }
-      @media screen and (max-width: 768px) {
+          font-size: var(--font-size-smaller); } }
+      @media (max-width: 768px) {
         .site-main .news-section .news li .news-description {
-          font-size: 12px; } }
+          font-size: var(--font-size-supersmall); } }
   .site-main .news-section .action {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem; }
-    @media screen and (max-width: 1024px) {
+    @media (max-width: 1024px) {
       .site-main .news-section .action {
-        font-size: 14px; } }
-    @media screen and (max-width: 768px) {
+        font-size: var(--font-size-smaller); } }
+    @media (max-width: 768px) {
       .site-main .news-section .action {
-        font-size: 12px; } }
+        font-size: var(--font-size-supersmall); } }
     .site-main .news-section .action a {
       text-decoration: none;
       cursor: pointer;
-      color: #152f63; }
+      color: var(--color-darkblue); }
       .site-main .news-section .action a i {
         padding-left: 0.5rem; }
       .site-main .news-section .action a:hover {
         text-decoration: underline; }
 
 .site-main .picofthemonth-section h2 {
-  color: #152f63;
+  color: var(--color-darkblue);
   text-align: center; }
 
 .site-main .picofthemonth-section .container {
@@ -89,16 +89,16 @@
   margin: 1.5rem auto;
   position: relative;
   width: 900px; }
-  @media screen and (max-width: 1024px) {
+  @media (max-width: 1024px) {
     .site-main .picofthemonth-section .container {
       width: 600px; } }
-  @media screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     .site-main .picofthemonth-section .container {
       width: 400px; } }
-  @media screen and (max-width: 640px) {
+  @media (max-width: 640px) {
     .site-main .picofthemonth-section .container {
       width: 300px; } }
-  @media screen and (max-width: 480px) {
+  @media (max-width: 480px) {
     .site-main .picofthemonth-section .container {
       width: 200px; } }
   .site-main .picofthemonth-section .container img {
@@ -106,16 +106,16 @@
     margin: 1rem auto;
     height: auto;
     width: 900px; }
-    @media screen and (max-width: 1024px) {
+    @media (max-width: 1024px) {
       .site-main .picofthemonth-section .container img {
         width: 600px; } }
-    @media screen and (max-width: 768px) {
+    @media (max-width: 768px) {
       .site-main .picofthemonth-section .container img {
         width: 400px; } }
-    @media screen and (max-width: 640px) {
+    @media (max-width: 640px) {
       .site-main .picofthemonth-section .container img {
         width: 300px; } }
-    @media screen and (max-width: 480px) {
+    @media (max-width: 480px) {
       .site-main .picofthemonth-section .container img {
         width: 200px; } }
   .site-main .picofthemonth-section .container .overlay {
@@ -127,16 +127,16 @@
     width: 0;
     height: 15%;
     transition: width 0.5s ease-in; }
-    @media screen and (max-width: 1024px) {
+    @media (max-width: 1024px) {
       .site-main .picofthemonth-section .container .overlay {
         height: 25%; } }
-    @media screen and (max-width: 768px) {
+    @media (max-width: 768px) {
       .site-main .picofthemonth-section .container .overlay {
         height: 35%; } }
-    @media screen and (max-width: 640px) {
+    @media (max-width: 640px) {
       .site-main .picofthemonth-section .container .overlay {
         height: 40%; } }
-    @media screen and (max-width: 480px) {
+    @media (max-width: 480px) {
       .site-main .picofthemonth-section .container .overlay {
         height: 45%; } }
     .site-main .picofthemonth-section .container .overlay .text {
@@ -147,16 +147,16 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
-      @media screen and (max-width: 1024px) {
+      @media (max-width: 1024px) {
         .site-main .picofthemonth-section .container .overlay .text {
-          font-size: 12px; } }
-      @media screen and (max-width: 768px) {
+          font-size: var(--font-size-supersmall); } }
+      @media (max-width: 768px) {
         .site-main .picofthemonth-section .container .overlay .text {
           font-size: 11px; } }
-      @media screen and (max-width: 640px) {
+      @media (max-width: 640px) {
         .site-main .picofthemonth-section .container .overlay .text {
           font-size: 10px; } }
-      @media screen and (max-width: 480px) {
+      @media (max-width: 480px) {
         .site-main .picofthemonth-section .container .overlay .text {
           font-size: 9px; } }
   .site-main .picofthemonth-section .container:hover .overlay {
@@ -176,13 +176,13 @@
     display: block;
     width: 350px;
     margin: 0 auto; }
-    @media screen and (max-width: 768px) {
+    @media (max-width: 768px) {
       .site-main .newinsite-section ul {
         width: 300px; } }
-    @media screen and (max-width: 480px) {
+    @media (max-width: 480px) {
       .site-main .newinsite-section ul {
         width: 250px; } }
-    @media screen and (max-width: 320px) {
+    @media (max-width: 320px) {
       .site-main .newinsite-section ul {
         width: 200px; } }
     .site-main .newinsite-section ul li {
@@ -190,15 +190,15 @@
       display: flex;
       align-items: center;
       padding: 0.3em; }
-      @media screen and (max-width: 1024px) {
+      @media (max-width: 1024px) {
         .site-main .newinsite-section ul li {
-          font-size: 16px; } }
-      @media screen and (max-width: 768px) {
+          font-size: var(--font-size-default); } }
+      @media (max-width: 768px) {
         .site-main .newinsite-section ul li {
-          font-size: 14px; } }
-      @media screen and (max-width: 480px) {
+          font-size: var(--font-size-smaller); } }
+      @media (max-width: 480px) {
         .site-main .newinsite-section ul li {
-          font-size: 12px; } }
+          font-size: var(--font-size-supersmall); } }
       .site-main .newinsite-section ul li:before {
         font-family: 'Font Awesome 5 Free';
         content: '\f00c';
@@ -209,7 +209,7 @@
 
 .site-main .subscribe-section {
   text-align: center;
-  background: #152f63;
+  background: var(--color-darkblue);
   color: #fff;
   padding-top: 2.5rem;
   padding-bottom: 0; }
@@ -222,17 +222,17 @@
     margin: 1rem auto; }
   .site-main .subscribe-section p {
     margin: 0 auto; }
-    @media screen and (max-width: 1024px) {
+    @media (max-width: 1024px) {
       .site-main .subscribe-section p {
-        font-size: 16px;
+        font-size: var(--font-size-default);
         width: 90%;
         padding-bottom: 1rem; } }
-    @media screen and (max-width: 768px) {
+    @media (max-width: 768px) {
       .site-main .subscribe-section p {
-        font-size: 14px; } }
-    @media screen and (max-width: 480px) {
+        font-size: var(--font-size-smaller); } }
+    @media (max-width: 480px) {
       .site-main .subscribe-section p {
-        font-size: 12px; } }
+        font-size: var(--font-size-supersmall); } }
   .site-main .subscribe-section input[type="email"] {
     margin-bottom: 0.5rem;
     margin-right: 0.3rem;
@@ -242,13 +242,13 @@
     outline: none;
     background-color: #fff;
     color: #215AA0; }
-    @media screen and (max-width: 1024px) {
+    @media (max-width: 1024px) {
       .site-main .subscribe-section input[type="email"] {
         padding: 0.6rem 6rem 0.6rem 0.6rem; } }
-    @media screen and (max-width: 768px) {
+    @media (max-width: 768px) {
       .site-main .subscribe-section input[type="email"] {
         padding: 0.5rem 3rem 0.5rem 0.5rem; } }
-    @media screen and (max-width: 480px) {
+    @media (max-width: 480px) {
       .site-main .subscribe-section input[type="email"] {
         padding: 0.3rem 1rem 0.3rem 0.3rem;
         margin-bottom: 0; } }
@@ -264,20 +264,18 @@
     margin-top: 1.2rem;
     margin-bottom: 2rem;
     transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out; }
-    @media screen and (max-width: 1024px) {
+    @media (max-width: 1024px) {
       .site-main .subscribe-section input[type="submit"] {
         padding: 0.6rem 2.5rem;
         margin-top: 1rem;
         margin-bottom: 1.8rem; } }
-    @media screen and (max-width: 768px) {
+    @media (max-width: 768px) {
       .site-main .subscribe-section input[type="submit"] {
         padding: 0.55rem 2.5rem;
-        margin-top: 1rem;
-        margin-bottom: 1.8rem;
-        font-size: 12px; } }
-    @media screen and (max-width: 480px) {
+        font-size: var(--font-size-supersmall); } }
+    @media (max-width: 480px) {
       .site-main .subscribe-section input[type="submit"] {
         padding: 0.35rem 0.8rem; } }
     .site-main .subscribe-section input[type="submit"]:hover {
-      background-color: #6b6b6b;
+      background-color: var(--color-grey);
       color: #fff; }
