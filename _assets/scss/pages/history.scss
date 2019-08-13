@@ -20,11 +20,13 @@
 
             &:after {
                 content: '';
-                width: 100px;
                 height: 2px;
                 background-color: var(--color-darkblue);
                 display: block;
                 margin: 1rem auto;
+                animation: changehrwidth 2s ease-out;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
             }
         }
         section {

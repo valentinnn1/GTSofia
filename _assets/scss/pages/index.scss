@@ -20,11 +20,13 @@
 
                 &:after {
                     content: '';
-                    width: 100px;
                     height: 2px;
                     background-color: var(--color-darkblue);
                     display: block;
                     margin: 1rem auto;
+                    animation: changehrwidth 2s ease-out;
+                    animation-direction: alternate;
+                    animation-iteration-count: infinite;
                 }
             }
             .news {
@@ -269,12 +271,13 @@
                         content: '\f00c';
                         display: block;
                         font-weight: 900;
-                        color: #fff;
                         margin-right: 1em;
+                        animation: changecolor 0.6s ease-out;
+                        animation-direction: alternate;
+                        animation-iteration-count: infinite;
                     }
                 }
             }
-            
         }
         .subscribe-section {
             text-align: center;
@@ -286,11 +289,13 @@
             h2 {
                 &:after {
                     content: '';
-                    width: 100px;
                     height: 2px;
                     background-color: #fff;
                     display: block;
                     margin: 1rem auto;
+                    animation: changehrwidth 2s ease-out;
+                    animation-direction: alternate;
+                    animation-iteration-count: infinite;
                 }
             }
             p {

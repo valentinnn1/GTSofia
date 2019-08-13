@@ -1,11 +1,29 @@
-/*@keyframes slideToRight {
+@keyframes changeform {
     from {
-        opacity: 0;
-        transform: translateX(-1em);
+        border-radius: 20rem;
     }
 
     to {
-        opacity: 1;
-        transform: translateX(0);
+        border-radius: 0;
     }
-}*/
+}
+
+@keyframes changehrwidth {
+    from {
+        width: 150px;
+    }
+
+    to {
+        width: 50px;
+    }
+}
+
+@keyframes changecolor {
+    from {
+        color: #fff;
+    }
+
+    to {
+        color: rgb(0, 190, 0);
+    }
+}

@@ -13,11 +13,16 @@
     text-align: center; }
     .site-main h2:after {
       content: '';
-      width: 100px;
       height: 2px;
       background-color: var(--color-darkblue);
       display: block;
-      margin: 1rem auto; }
+      margin: 1rem auto;
+      -webkit-animation: changehrwidth 2s ease-out;
+              animation: changehrwidth 2s ease-out;
+      -webkit-animation-direction: alternate;
+              animation-direction: alternate;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite; }
   .site-main section {
     border-bottom: 1px solid #bdbdbd;
     margin: 1rem auto;
