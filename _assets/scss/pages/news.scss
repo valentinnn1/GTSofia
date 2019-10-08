@@ -45,6 +45,8 @@
             .date {
                 color: grey;
                 padding: 0.4rem 0;
+                font-style: italic;
+                font-size: 14px;
 
                 @include bp(laptop) {
                     font-size: var(--font-size-supersmall);

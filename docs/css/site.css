@@ -208,12 +208,6 @@ html {
       font-weight: bold;
       margin-top: 0.8rem;
       margin-bottom: 2rem;
-      -webkit-animation: changeform 3s ease-out;
-              animation: changeform 3s ease-out;
-      -webkit-animation-direction: alternate;
-              animation-direction: alternate;
-      -webkit-animation-iteration-count: infinite;
-              animation-iteration-count: infinite;
       transition: background-color 0.4s ease-in-out; }
       .site-header section a:hover {
         background-color: var(--color-grey); }

@@ -50,7 +50,8 @@
             border: none; } }
       .site-main .news-section .news li .date {
         color: grey;
-        padding: 0.4rem 0; }
+        padding: 0.4rem 0;
+        font-style: italic; }
         @media (max-width: 1024px) {
           .site-main .news-section .news li .date {
             font-size: var(--font-size-supersmall);
@@ -108,9 +109,11 @@
       width: 200px; } }
   .site-main .picofthemonth-section .container img {
     display: block;
-    margin: 1rem auto;
+    margin: 0 auto;
     height: auto;
-    width: 900px; }
+    width: 900px;
+    outline: var(--color-darkblue) 8px solid;
+    cursor: pointer; }
     @media (max-width: 1024px) {
       .site-main .picofthemonth-section .container img {
         width: 600px; } }
@@ -128,10 +131,11 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.5);
-    width: 0;
-    height: 15%;
-    transition: width 0.5s ease-in; }
+    background: rgba(2, 48, 97, 0.8);
+    width: 100%;
+    height: 0px;
+    transition: height 0.2s ease-in;
+    cursor: pointer; }
     @media (max-width: 1024px) {
       .site-main .picofthemonth-section .container .overlay {
         height: 25%; } }
@@ -151,7 +155,8 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%); }
+      transform: translate(-50%, -50%);
+      font-weight: bold; }
       @media (max-width: 1024px) {
         .site-main .picofthemonth-section .container .overlay .text {
           font-size: var(--font-size-supersmall); } }
@@ -165,7 +170,7 @@
         .site-main .picofthemonth-section .container .overlay .text {
           font-size: 9px; } }
   .site-main .picofthemonth-section .container:hover .overlay {
-    width: 100%; }
+    height: 100px; }
   .site-main .picofthemonth-section .container:hover .text {
     opacity: 1; }
 
@@ -175,11 +180,19 @@
   text-align: center;
   color: #fff;
   background: #3258a5; }
-  .site-main .newinsite-section h2 {
-    padding-bottom: 1rem; }
+  .site-main .newinsite-section p:nth-of-type(2) {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 0.5em; }
+  .site-main .newinsite-section h3 {
+    padding-bottom: 0.4em; }
+  .site-main .newinsite-section .last-update-date {
+    font-style: italic;
+    opacity: 0.5;
+    font-size: 14px;
+    padding-bottom: 0.4em; }
   .site-main .newinsite-section ul {
-    display: block;
-    width: 350px;
+    display: inline-block;
     margin: 0 auto; }
     @media (max-width: 768px) {
       .site-main .newinsite-section ul {
@@ -190,6 +203,18 @@
     @media (max-width: 320px) {
       .site-main .newinsite-section ul {
         width: 200px; } }
+    .site-main .newinsite-section ul:after {
+      content: '';
+      height: 2px;
+      background-color: #fff;
+      display: block;
+      margin: 2rem auto;
+      -webkit-animation: changehrwidth 2s ease-out;
+              animation: changehrwidth 2s ease-out;
+      -webkit-animation-direction: alternate;
+              animation-direction: alternate;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite; }
     .site-main .newinsite-section ul li {
       list-style: none;
       display: flex;
@@ -209,13 +234,7 @@
         content: '\f00c';
         display: block;
         font-weight: 900;
-        margin-right: 1em;
-        -webkit-animation: changecolor 0.6s ease-out;
-                animation: changecolor 0.6s ease-out;
-        -webkit-animation-direction: alternate;
-                animation-direction: alternate;
-        -webkit-animation-iteration-count: infinite;
-                animation-iteration-count: infinite; }
+        margin-right: 1em; }
 
 .site-main .subscribe-section {
   text-align: center;
@@ -223,18 +242,8 @@
   color: #fff;
   padding-top: 2.5rem;
   padding-bottom: 0; }
-  .site-main .subscribe-section h2:after {
-    content: '';
-    height: 2px;
-    background-color: #fff;
-    display: block;
-    margin: 1rem auto;
-    -webkit-animation: changehrwidth 2s ease-out;
-            animation: changehrwidth 2s ease-out;
-    -webkit-animation-direction: alternate;
-            animation-direction: alternate;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite; }
+  .site-main .subscribe-section h2 {
+    padding-bottom: 1.5rem; }
   .site-main .subscribe-section p {
     margin: 0 auto; }
     @media (max-width: 1024px) {

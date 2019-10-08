@@ -32,7 +32,9 @@
       border: none; }
     .site-main li .date {
       color: grey;
-      padding: 0.4rem 0; }
+      padding: 0.4rem 0;
+      font-style: italic;
+      font-size: 14px; }
       @media (max-width: 1024px) {
         .site-main li .date {
           font-size: var(--font-size-supersmall);
