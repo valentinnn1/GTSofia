@@ -104,9 +104,6 @@
   @media (max-width: 640px) {
     .site-main .picofthemonth-section .container {
       width: 300px; } }
-  @media (max-width: 480px) {
-    .site-main .picofthemonth-section .container {
-      width: 200px; } }
   .site-main .picofthemonth-section .container img {
     display: block;
     margin: 0 auto;
@@ -123,9 +120,6 @@
     @media (max-width: 640px) {
       .site-main .picofthemonth-section .container img {
         width: 300px; } }
-    @media (max-width: 480px) {
-      .site-main .picofthemonth-section .container img {
-        width: 200px; } }
   .site-main .picofthemonth-section .container .overlay {
     position: absolute;
     bottom: 0;
@@ -136,18 +130,6 @@
     height: 0px;
     transition: height 0.2s ease-in;
     cursor: pointer; }
-    @media (max-width: 1024px) {
-      .site-main .picofthemonth-section .container .overlay {
-        height: 25%; } }
-    @media (max-width: 768px) {
-      .site-main .picofthemonth-section .container .overlay {
-        height: 35%; } }
-    @media (max-width: 640px) {
-      .site-main .picofthemonth-section .container .overlay {
-        height: 40%; } }
-    @media (max-width: 480px) {
-      .site-main .picofthemonth-section .container .overlay {
-        height: 45%; } }
     .site-main .picofthemonth-section .container .overlay .text {
       text-align: center;
       opacity: 0;
@@ -166,11 +148,21 @@
       @media (max-width: 640px) {
         .site-main .picofthemonth-section .container .overlay .text {
           font-size: 10px; } }
-      @media (max-width: 480px) {
-        .site-main .picofthemonth-section .container .overlay .text {
-          font-size: 9px; } }
-  .site-main .picofthemonth-section .container:hover .overlay {
-    height: 100px; }
+  @media (min-width: 1025px) and (max-width: 1799px) {
+    .site-main .picofthemonth-section .container:hover .overlay {
+      height: 25%; } }
+  @media (max-width: 1024px) {
+    .site-main .picofthemonth-section .container:hover .overlay {
+      height: 30%; } }
+  @media (max-width: 768px) {
+    .site-main .picofthemonth-section .container:hover .overlay {
+      height: 35%; } }
+  @media (max-width: 640px) {
+    .site-main .picofthemonth-section .container:hover .overlay {
+      height: 40%; } }
+  @media (max-width: 480px) {
+    .site-main .picofthemonth-section .container:hover .overlay {
+      height: 45%; } }
   .site-main .picofthemonth-section .container:hover .text {
     opacity: 1; }
 

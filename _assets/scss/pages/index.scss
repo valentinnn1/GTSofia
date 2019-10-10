@@ -136,10 +136,6 @@
                 @include bp(large-phone) {
                     width: 300px;
                 }
-
-                @include bp(phone) {
-                    width: 200px;
-                }
                 
                 img {
                     display: block;
@@ -160,10 +156,6 @@
                     @include bp(large-phone) {
                         width: 300px;
                     }
-    
-                    @include bp(phone) {
-                        width: 200px;
-                    }
                 }
 
                 .overlay {
@@ -176,22 +168,6 @@
                     height: 0px;
                     transition: height 0.2s ease-in;
                     cursor: pointer;
-
-                    @include bp(laptop) {
-                        height: 25%;
-                    }
-            
-                    @include bp(tablet) {
-                        height: 35%;
-                    }
-
-                    @include bp(large-phone) {
-                        height: 40%;
-                    }
-
-                    @include bp(phone) {
-                        height: 45%;
-                    }
 
                     .text {
                         text-align: center;
@@ -213,14 +189,28 @@
                         @include bp(large-phone) {
                             font-size: 10px;
                         }
-    
-                        @include bp(phone) {
-                            font-size: 9px;
-                        }
                     }
                 }
                 &:hover .overlay {
-                    height: 100px;
+                    @include bp(desktop) {
+                        height: 25%;
+                    }
+
+                    @include bp(laptop) {
+                        height: 30%;
+                    }
+            
+                    @include bp(tablet) {
+                        height: 35%;
+                    }
+
+                    @include bp(large-phone) {
+                        height: 40%;
+                    }
+
+                    @include bp(phone) {
+                        height: 45%;
+                    }
                 }
                 &:hover .text {
                     opacity: 1;
