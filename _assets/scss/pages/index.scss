@@ -185,10 +185,6 @@
                         @include bp(tablet) {
                             font-size: 11px;
                         }
-    
-                        @include bp(large-phone) {
-                            font-size: 10px;
-                        }
                     }
                 }
                 &:hover .overlay {

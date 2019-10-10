@@ -145,9 +145,6 @@
       @media (max-width: 768px) {
         .site-main .picofthemonth-section .container .overlay .text {
           font-size: 11px; } }
-      @media (max-width: 640px) {
-        .site-main .picofthemonth-section .container .overlay .text {
-          font-size: 10px; } }
   @media (min-width: 1025px) and (max-width: 1799px) {
     .site-main .picofthemonth-section .container:hover .overlay {
       height: 25%; } }
